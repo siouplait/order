@@ -3,19 +3,24 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
+import { Welcome } from '@storybook/react/demo'
+import './stories.css'
 
-import { Button, Welcome } from '@storybook/react/demo'
+import '../css-modules/Button.css'
+import Button from '../components-modules/Button'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
 
 storiesOf('Button', module)
-  .add('with text', () =>
-    <Button onClick={action('clicked')}>
-      Hello Button
+  .add('button principal', () =>
+    <Button className="s-btn" onClick={action('clicked')}>
+    Hello Button
     </Button>)
-  .add('with some emoji', () =>
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="emoji">
-        😀 😎 👍 💯
-      </span>
+  .add('button facebook', () =>
+    <Button className="s-btn s-facebook" onClick={action('clicked')}>
+      Facebook Connect
+    </Button>)
+  .add('button black', () =>
+    <Button className="s-btn s-black" onClick={action('clicked')}>
+      PASSER COMMANDE
     </Button>)

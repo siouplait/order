@@ -1,0 +1,18 @@
+.s-btn {
+    height: 3em;
+    width: 11em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.s-facebook {
+    border: 1px solid #014A94;
+    background-color: #014A94;
+    color: #fff;
+}
+
+.s-black {
+    background-color: #000;
+    color: #fff;
+}
