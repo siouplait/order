@@ -19,6 +19,8 @@ import InputLogo from '../components-modules/InputLogo'
 import btnBurger from '../icon/btn_burger.svg'
 import btnBack from '../icon/btn_back.svg'
 import iconSearch from '../icon/icon_search.svg'
+import iconAdding from '../icon/btn_adding.svg'
+import iconRemove from '../icon/btn_remove.svg'
 
 // welcome
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
@@ -50,22 +52,32 @@ storiesOf('Button', module)
   .add('Btn black share', () =>
     <Button className="s-btn s-black" onClick={action('clicked')}>
       PARTAGER
-      <img className="s-icon-symetric" src={btnBack} alt="button burger 30 x 30" height="30px"
+      <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
         width="30px" />
     </Button>)
   .add('Btn search', () =>
     <Button className="s-btn-icon" onClick={action('clicked')}>
-      <img src={iconSearch} alt="button burger 30 x 30" height="30px"
+      <img src={iconSearch} alt="button search 30 x 30" height="30px"
+        width="30px" />
+    </Button>)
+  .add('Btn adding', () =>
+    <Button className="s-btn-icon" onClick={action('clicked')}>
+      <img src={iconAdding} alt="button adding 30 x 30" height="30px"
+        width="30px" />
+    </Button>)
+  .add('Btn remove', () =>
+    <Button className="s-btn-icon" onClick={action('clicked')}>
+      <img src={iconRemove} alt="button remove 30 x 30" height="30px"
         width="30px" />
     </Button>)
 
 // INPUT stories
 storiesOf('Input', module)
   .add('Input standard', () =>
-    <Input className="s-input" placeholder="standard input" />)
+    <Input className="s-input" placeholder="Standard input" />)
   .add('Input search', () =>
     <InputLogo className="s-block-input-logo" >
-      <Input className="s-input" placeholder="standard input" />
+      <Input className="s-input" placeholder="Search input" />
       <Button className="s-btn-icon" onClick={action('clicked')}>
         <img src={iconSearch} alt="button burger 30 x 30" height="30px"
           width="30px" />
