@@ -27,7 +27,14 @@ import iconSearch from '../icon/icon_search.svg'
 import iconAdding from '../icon/btn_adding.svg'
 import iconRemove from '../icon/btn_remove.svg'
 
-// welcome
+
+// view of App
+import App from "../App";
+
+storiesOf('App', module)
+.add('default', () => <App />)
+
+//welcome
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
 
 // BUTTON stories
@@ -41,8 +48,8 @@ storiesOf('Button', module)
       Facebook Connect
     </Button>)
   .add('Btn black', () =>
-    <Button className="s-btn s-black" onClick={action('clicked')}>
-      PASSER COMMANDE
+    <Button 
+      PASSER COMMANDEclassName="s-btn s-black" onClick={action('clicked')}>
     </Button>)
   .add('Btn burger', () =>
     <Button className="s-btn-icon" onClick={action('clicked')}>
@@ -110,3 +117,5 @@ storiesOf('Nav', module)
       </Button>
       <h1>Siouplaît!</h1>
     </Nav>)
+
+export default Button;
