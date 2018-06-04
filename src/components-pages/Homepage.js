@@ -6,7 +6,7 @@ import "./Homepage.css"
 class Home extends Component {
   render () {
     return (
-      <div className="Home">*
+      <div className="Home">
         <div class="homeLogo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
@@ -14,6 +14,7 @@ class Home extends Component {
         <button className="s-btn s-black" >
         Passer Commande
         </button>
+        
       </div>
       
       </div>

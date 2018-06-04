@@ -48,8 +48,8 @@ storiesOf('Button', module)
       Facebook Connect
     </Button>)
   .add('Btn black', () =>
-    <Button 
-      PASSER COMMANDEclassName="s-btn s-black" onClick={action('clicked')}>
+    <Button className="s-btn s-black" onClick={action('clicked')}>
+      PASSER COMMANDE 
     </Button>)
   .add('Btn burger', () =>
     <Button className="s-btn-icon" onClick={action('clicked')}>
