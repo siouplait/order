@@ -6,7 +6,7 @@ import "./Connect.css"
 class Connect extends Component {
   render () {
     return (
-      <div className="Home">
+      <div class="Home">
         <div class="homeLogo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
