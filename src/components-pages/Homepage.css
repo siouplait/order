@@ -3,19 +3,20 @@
     background-color: rgb(255, 177, 32);
     background-repeat: repeat ;
     background-position: 100%;
-    max-width: 100%;
-    max-height: 1000px;
+    /* max-width: 100%;
+    max-height: 1000px; */
     /* overflow: hidden;
     /* margin-top: -2px;  */
     height: 100%; 
   }
 
   .App-logo{
-    /* float: center; */
-    margin-top: 175px;
+    float: center;
+    margin: 100px;
+    width: 50%;
+    height:50%;
   }
 
-s-btn s-black {
-  margin-top: 100px;
-
+.homeButton{
+  margin: 15%;
 }
