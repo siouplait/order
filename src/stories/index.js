@@ -9,11 +9,13 @@ import { Welcome } from '@storybook/react/demo'
 import './stories.css'
 import '../css-modules/Button.css'
 import '../css-modules/Input.css'
+import '../css-modules/Link.css'
 
 // components
 import Button from '../components-modules/Button'
 import Input from '../components-modules/Input'
 import InputLogo from '../components-modules/InputLogo'
+import Link from '../components-modules/Link'
 
 // icon
 import btnBurger from '../icon/btn_burger.svg'
@@ -83,3 +85,10 @@ storiesOf('Input', module)
           width="30px" />
       </Button>
     </InputLogo>)
+
+// INPUT stories
+storiesOf('Link', module)
+  .add('link highlighted', () =>
+    <Link className="link-highlighted">
+      Commander sans compte
+    </Link>)
