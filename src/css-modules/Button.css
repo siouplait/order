@@ -1,6 +1,8 @@
+/* BTN  */
 .s-btn {
     height: 3em;
-    width: 11em;
+    width: auto;
+    padding: 0 1em;
     border: 1px solid #000;
     border-radius: 5px;
     font-size: 1em;
@@ -13,6 +15,18 @@
 }
 
 .s-black {
-    background-color: #000;
-    color: #fff;
+    filter: invert(100%);
+}
+
+.s-btn-icon {
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+}
+
+/* ICON */
+.s-icon-symetric {
+    margin-left: 0.5em;
+    vertical-align: middle;
+    transform: scaleX(-1);
 }
