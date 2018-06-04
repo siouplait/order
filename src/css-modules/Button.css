@@ -1,5 +1,6 @@
 /* BTN  */
 .s-btn {
+    background-color: transparent;
     height: 3em;
     width: auto;
     padding: 0 1em;
@@ -15,6 +16,7 @@
 }
 
 .s-black {
+    background-color: white;
     filter: invert(100%);
 }
 

@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { Welcome } from '@storybook/react/demo'
+import { withStorySource } from '@storybook/addon-storysource'
+import { withNotes } from '@storybook/addon-notes';
 
 // css
 import './stories.css'
@@ -32,14 +34,32 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 
 // BUTTON stories
 storiesOf('Button', module)
-  .add('Btn principal', () =>
+  .add('Btn principal', withNotes('Simple link use class (s-btn)') (() =>
     <Button className="s-btn" onClick={action('clicked')}>
     Hello Button
-    </Button>)
+    </Button>))
+    .addDecorator(withStorySource(`
+import React from 'react'
+import '../css-modules/Button.css'
+
+    <Button className="s-btn" onClick={action('clicked')}>
+    Hello Button
+    </Button>`
+  ))
+  
   .add('Btn facebook', () =>
     <Button className="s-btn s-facebook" onClick={action('clicked')}>
       Facebook Connect
-    </Button>)
+    </Button>).addDecorator(withStorySource(`
+import React from 'react'
+import '../css-modules/Button.css'
+
+    <Button className="s-btn s-facebook" onClick={action('clicked')}>
+      Facebook Connect
+    </Button>`
+  ))
+
+
   .add('Btn black', () =>
     <Button className="s-btn s-black" onClick={action('clicked')}>
       PASSER COMMANDE
