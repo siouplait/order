@@ -7,15 +7,18 @@ import { Welcome } from '@storybook/react/demo'
 
 // css
 import './stories.css'
+import '../index.css'
 import '../css-modules/Button.css'
 import '../css-modules/Input.css'
 import '../css-modules/Link.css'
+import '../css-modules/Nav.css'
 
 // components
 import Button from '../components-modules/Button'
 import Input from '../components-modules/Input'
 import InputLogo from '../components-modules/InputLogo'
 import Link from '../components-modules/Link'
+import Nav from '../components-modules/Nav'
 
 // icon
 import btnBurger from '../icon/btn_burger.svg'
@@ -48,7 +51,7 @@ storiesOf('Button', module)
     </Button>)
   .add('Btn back', () =>
     <Button className="s-btn-icon" onClick={action('clicked')}>
-      <img src={btnBack} alt="button burger 60 x 60" height="60px"
+      <img src={btnBack} alt="button back 60 x 60" height="60px"
         width="60px"/>
     </Button>)
   .add('Btn black share', () =>
@@ -86,9 +89,24 @@ storiesOf('Input', module)
       </Button>
     </InputLogo>)
 
-// INPUT stories
+// LINK stories
 storiesOf('Link', module)
   .add('link highlighted', () =>
-    <Link className="link-highlighted">
+    <Link className="s-link-highlighted">
       Commander sans compte
     </Link>)
+
+// NAVBAR stories
+storiesOf('Nav', module)
+  .add('Nav menu', () =>
+    <Nav className="s-nav-menu">
+      <Button className="s-btn-icon" onClick={action('clicked')}>
+        <img src={btnBurger} alt="button burger 50 x 50" height="50px"
+          width="50px" />
+      </Button>
+      <Button className="s-btn-icon" onClick={action('clicked')}>
+        <img src={btnBack} alt="button back 50 x 50" height="50px"
+          width="50px" />
+      </Button>
+      <h1>Siouplaît!</h1>
+    </Nav>)
