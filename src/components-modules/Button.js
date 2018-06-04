@@ -1,6 +1,5 @@
 import React from 'react'
-
-import '../css-modules/Button.css'
+import './Button.css'
 
 const Button = ({ children, ...rest }) =>
   <button className="s-btn s-facebook" {...rest}>

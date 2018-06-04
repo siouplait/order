@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import logo from "../components-pages/petitlogo.png"
+import logo from '../components-pages/petitlogo.png'
 import button from '../components-modules/Button.js'
-import "./Connect.css"
+import './Connect.css'
 
 class Connect extends Component {
   render () {
@@ -10,21 +10,21 @@ class Connect extends Component {
         <div class="homeLogo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-      
-            <div class="fbButton">
-                <button className="s-btn s-facebook" >
+
+        <div class="fbButton">
+          <button className="s-btn s-facebook" >
                 Facebook Connect
-                </button>
-            </div>
-      
-            <div class="coButton">
-                <button className="s-btn">
+          </button>
+        </div>
+
+        <div class="coButton">
+          <button className="s-btn">
                 S'inscrire
-                </button>
-            </div>
-      
+          </button>
+        </div>
+
         <footer>
-            <a href=""> Commander sans compte</a>
+          <a href=""> Commander sans compte</a>
         </footer>
 
       </div>
@@ -32,4 +32,4 @@ class Connect extends Component {
   }
 }
 
-export default Connect;
+export default Connect
