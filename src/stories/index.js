@@ -182,10 +182,25 @@ storiesOf('Page', module)
       <p style={{ padding: '0 2em', textAlign: 'justify' }}>Posez votre téléphone sur les jolis ronds connectés, et découvrez directement le menu du spot où vous êtes</p>
       <img src={logoMain} alt="logo 100 x 100" height="75"
         width="75" />
-      <Button style={{ marginTop: '2em' }} className="s-btn-icon" onClick={action('clicked')}>
+      <Button style={{ marginTop: '6em' }} className="s-btn-icon" onClick={action('clicked')}>
         <img src={btnBack} alt="button back 60 x 60" height="60px"
           width="60px" />
       </Button>
+    </PageTemplate>
+  )
+  .add('Last Page', () =>
+    <PageTemplate className="s-bg-orange">
+      <h1> #EtMerci! </h1>
+      <p> Le "Name of the place" prépare votre commande.
+        <br/>Vous recevrez une notification quand celle-ci sera prête.
+      </p>
+      <img src={logoMain} alt="button burger 140 x 140" height="140"
+        width="140" />
+      <Button style={{ marginTop: '21em', position: 'fixed'}} className="s-btn s-black" onClick={action('clicked')}>
+        PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
+        width="30px" />
+      </Button>
+      <p style={{ bottom: 0, marginTop: '13em' }}> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
 
