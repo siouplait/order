@@ -179,9 +179,9 @@ storiesOf('Page', module)
         </Button>
         <h1>Siouplaît!</h1>
       </Nav>
-      <img style={{ marginTop: '3em' }} src={logoNfcn} alt="logo QR" height="80" width="80" />
-      <p style={{ padding: '0 2em', textAlign: 'justify' }}>Posez votre téléphone sur les jolis ronds connectés, et découvrez directement le menu du spot où vous êtes</p>
-      <img src={logoMain} alt="logo 100 x 100" height="75"
+      <img style={{ marginTop: '7em' }} src={logoNfcn} alt="logo QR" height="80" width="80" />
+      <p style={{ padding: '0 3em', textAlign: 'center' }}>Posez votre téléphone sur les jolis ronds connectés, et découvrez directement le menu du spot où vous êtes</p>
+      <img style={{ marginTop: '2.5em'}} src={logoMain} alt="logo 100 x 100" height="75"
         width="75" />
       <Button style={{ marginTop: '6em' }} className="s-btn-icon" onClick={action('clicked')}>
         <img src={btnBack} alt="button back 60 x 60" height="60px"
