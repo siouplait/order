@@ -197,12 +197,12 @@ storiesOf('Page', module)
       </p>
       <img src={logoMain} alt="button burger 140 x 140" height="140"
         width="140" />
-      <Button style={{ marginTop: '21em', position: 'fixed'}} className="s-btn s-black" onClick={action('clicked')}>
+      <Button style={{ marginTop: '1em'}} className="s-btn s-black" onClick={action('clicked')}>
         PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
         width="30px" />
       </Button>
-      <img style={{ marginTop: '7em', rotate: '180°'}} src={logoSioup} alt="button burger 140 x 140" />
-      <p style={{ marginTop: '2em' }}> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
+      <img style={{ marginTop: '2em', marginBottom: '2em', transform: 'rotate(-11deg)', bottom: 0 }} src={logoSioup} alt="button burger 140 x 140" />
+      <p style={{ marginTop: '1em' }}> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
 
