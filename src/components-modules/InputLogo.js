@@ -1,7 +1,7 @@
 import React from 'react'
 
 const InputLogo = ({ children, ...rest }) =>
-  <div {...rest} >
+  <div {...rest}>
     {children}
   </div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import './Button.css'
 
 const Button = ({ children, ...rest }) =>
-  <button className="s-btn s-facebook" {...rest}>
+  <button {...rest}>
     {children}
   </button>
 
