@@ -16,9 +16,10 @@
     "fix": "eslint ./src --fix",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook -s src/stories .out",
     "predeploy": "npm run build",
-    "deploy": "story-base -d build"
+    "deploy": "story-base -d build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.5",
@@ -26,6 +27,7 @@
     "@storybook/addon-notes": "^3.4.6",
     "@storybook/addon-storysource": "^3.4.6",
     "@storybook/react": "^3.4.5",
+    "@storybook/storybook-deployer": "^2.3.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",

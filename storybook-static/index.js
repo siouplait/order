@@ -153,7 +153,7 @@ storiesOf('Page', module)
       <Button className="s-btn" onClick={action('clicked')}>
         Androïd : NFC
       </Button>
-      <Link block logo={btnSearch}>
+      <Link block={true} logo={btnSearch}>
         Rechercher un spot
       </Link>
     </PageTemplate>
