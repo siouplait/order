@@ -10,7 +10,7 @@ import { withNotes } from '@storybook/addon-notes'
 // css
 import './stories.css'
 import '../index.css'
-
+import '../class-generic.css'
 // components
 import Button from '../components-modules/Button'
 import Input from '../components-modules/Input'
