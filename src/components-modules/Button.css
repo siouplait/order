@@ -16,6 +16,7 @@
 }
 
 .s-black {
+    border: none;
     background-color: white;
     filter: invert(100%);
 }
@@ -31,4 +32,9 @@
     margin-left: 0.5em;
     vertical-align: middle;
     transform: scaleX(-1);
+}
+
+img.s-resize {
+  width: 2.7em;
+  height: 10vh;
 }

@@ -1,22 +1,31 @@
 .s-nav-menu {
   background-color: #FFB72D;
-  padding: 0.5em 0;
+  padding: 0.3em 0;
   text-align: center;
-  line-height: 2.75em;
+  line-height: 2.35em;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .s-nav-menu > h1 {
-  font-size: 2em;
+  font-size: 6vh;
 }
 
 .s-nav-menu > button:first-child {
-  position: absolute;
+  position: fixed;
   left: 0;
-  margin-left: 0.5em;
+  margin-left: 5px;
+  /* background-color: aqua; */
 }
 
 .s-nav-menu > button + button {
-  position: absolute;
+  position: fixed;
   right: 0;
-  margin-right: 0.5em;
+  margin-right: 5px;
+  /* background-color: aqua; */
+}
+
+.s-nav-noback > button + button {
+  display: none;
 }
