@@ -183,8 +183,8 @@ storiesOf('Page', module)
       <p class="s-mt-0"> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
-      <img src={logoMain} alt="button burger 140 x 140" height="140"
-        width="140" />
+      <img src={logoMain} alt="button burger 140 x 140" height="180"
+        width="180" />
       <Button className="s-btn s-black s-mt-1" onClick={action('clicked')}>
         PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
         width="30px" />
