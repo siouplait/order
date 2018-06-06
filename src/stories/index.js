@@ -191,7 +191,7 @@ storiesOf('Page', module)
   )
   .add('Logout Page', () =>
     <PageTemplate className="s-bg-orange">
-      <h1> #EtMerci! </h1>
+      <h1 style={{ marginTop: 0 }}> #EtMerci! </h1>
       <p> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
