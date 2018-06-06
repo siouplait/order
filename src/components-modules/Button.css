@@ -6,7 +6,6 @@
     padding: 0 1em;
     border: 1px solid #000;
     border-radius: 5px;
-    font-size: 1em;
 }
 
 .s-facebook {
@@ -34,7 +33,7 @@
     transform: scaleX(-1);
 }
 
-img.s-resize {
+img.s-btn-img-resize {
   width: 2.7em;
   height: 10vh;
 }

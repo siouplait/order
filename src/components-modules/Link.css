@@ -1,5 +1,23 @@
 .s-link-highlighted {
+  font-weight: 300;
   font-size: 1.2em;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.s-link-block-white {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  line-height: 4em;
+  width: 100%;
+  background-color: white;
+  border: 1px solid silver;
+}
+
+img.s-link-img-resize {
+  position: fixed;
+  margin: 0.5em 0 0 0.5em;
+  width: 1.7em;
+  height: 9vh;
 }
