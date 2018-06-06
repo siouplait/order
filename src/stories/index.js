@@ -179,8 +179,8 @@ storiesOf('Page', module)
   )
   .add('Logout Page', () =>
     <PageTemplate className="s-bg-orange">
-      <h1 class=" merci s-mt-1 s-mb-0"> #EtMerci! </h1>
-      <p class="s-mt-0"> Le "Name of the place" prépare votre commande.
+      <h1 className=" merci s-mt-1 s-mb-0"> #EtMerci! </h1>
+      <p className="s-mt-0"> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
       <img src={logoMain} alt="button burger 140 x 140" height="180"
@@ -190,7 +190,7 @@ storiesOf('Page', module)
         width="30px" />
       </Button>
       <img style={{ transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" class="s-mt-2"/>
-      <p class="s-mt-2"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
+      <p className="s-mt-2"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
 
