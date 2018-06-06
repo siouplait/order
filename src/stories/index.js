@@ -179,7 +179,7 @@ storiesOf('Page', module)
   )
   .add('Logout Page', () =>
     <PageTemplate className="s-bg-orange">
-      <h1 class="s-mt-1"> #EtMerci! </h1>
+      <h1 class=" merci s-mt-1 s-mb-0"> #EtMerci! </h1>
       <p class="s-mt-0"> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
@@ -189,7 +189,7 @@ storiesOf('Page', module)
         PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
         width="30px" />
       </Button>
-      <img style={{ transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" class="s-mt-3"/>
+      <img style={{ transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" class="s-mt-2"/>
       <p class="s-mt-2"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
