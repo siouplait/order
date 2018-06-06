@@ -1,0 +1,40 @@
+/* BTN  */
+.s-btn {
+    background-color: transparent;
+    height: 3em;
+    width: auto;
+    padding: 0 1em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.s-facebook {
+    border: 1px solid #014A94;
+    background-color: #014A94;
+    color: #fff;
+}
+
+.s-black {
+    border: none;
+    background-color: white;
+    filter: invert(100%);
+}
+
+.s-btn-icon {
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+}
+
+/* ICON */
+.s-icon-symetric {
+    margin-left: 0.5em;
+    vertical-align: middle;
+    transform: scaleX(-1);
+}
+
+img.s-resize {
+  width: 2.7em;
+  height: 10vh;
+}

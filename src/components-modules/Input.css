@@ -1,0 +1,20 @@
+.s-input {
+    height: 2.5em;
+    width: 11em;
+    padding: 0 2.5em 0 1em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.s-block-input-logo {
+    position: relative;
+    width: 14em;
+}
+
+.s-block-input-logo button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
