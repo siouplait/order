@@ -9,10 +9,10 @@ import './Nav.css'
 const Nav = ({ children, ...rest }) =>
   <div {...rest}>{children}
     <Button className="s-btn-icon">
-      <img className="s-resize" src={btnBurger} alt="button burger" />
+      <img className="s-btn-img-resize" src={btnBurger} alt="button burger" />
     </Button>
     <Button className="s-btn-icon">
-      <img className="s-resize" src={btnBack} alt="button back" />
+      <img className="s-btn-img-resize" src={btnBack} alt="button back" />
     </Button>
     <h1>Siouplaît!</h1>
   </div>

@@ -1,8 +1,7 @@
 .s-nav-menu {
   background-color: #FFB72D;
-  padding: 0.3em 0;
   text-align: center;
-  line-height: 2.35em;
+  line-height: 3em;
   position: fixed;
   width: 100%;
   top: 0;
@@ -12,7 +11,7 @@
   font-size: 6vh;
 }
 
-.s-nav-menu > button:first-child {
+.s-nav-menu > button:first-child, .s-btn-burger {
   position: fixed;
   left: 0;
   margin-left: 5px;
@@ -27,5 +26,13 @@
 }
 
 .s-nav-noback > button + button {
+  display: none;
+}
+
+.s-no-title {
+  background-color: transparent;
+}
+
+.s-no-title > h1 {
   display: none;
 }
