@@ -29,6 +29,7 @@ import btnRemove from '../icon/btn_remove.svg'
 import logoMain from '../icon/logo_main2.png'
 import logoQr from '../icon/logo_qr.png'
 import logoNfcn from '../icon/logo_nfcn.png'
+import logoSioup from '../icon/logo_sioup.png'
 
 // welcome
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
@@ -174,6 +175,22 @@ storiesOf('Page', module)
             width="60px" />
         </Button>
       </div>
+    </PageTemplate>
+  )
+  .add('Logout Page', () =>
+    <PageTemplate className="s-bg-orange">
+      <h1 class="s-mt-1"> #EtMerci! </h1>
+      <p class="s-mt-0"> Le "Name of the place" prépare votre commande.
+        <br/>Vous recevrez une notification quand celle-ci sera prête.
+      </p>
+      <img src={logoMain} alt="button burger 140 x 140" height="140"
+        width="140" />
+      <Button className="s-btn s-black s-mt-1" onClick={action('clicked')}>
+        PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
+        width="30px" />
+      </Button>
+      <img style={{ transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" class="s-mt-3"/>
+      <p class="s-mt-2"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
 
