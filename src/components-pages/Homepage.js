@@ -7,10 +7,10 @@ class Homepage extends Component {
   render () {
     return (
       <div className="Home">
-        <div class="homeLogo">
+        <div className="homeLogo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <div class="homeButton">
+        <div className="homeButton">
           <button className="s-btn s-black" >
             Passer Commande
           </button>
