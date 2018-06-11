@@ -194,4 +194,22 @@ storiesOf('Page', module)
     </PageTemplate>
   )
 
+  .add('Logout Page', () =>
+  <PageTemplate className="s-bg-orange">
+    <h1 style={{ marginTop: 0 }}> #EtMerci! </h1>
+    <p> Le "Name of the place" prépare votre commande.
+      <br/>Vous recevrez une notification quand celle-ci sera prête.
+    </p>
+    <img src={logoMain} alt="button burger 140 x 140" height="140"
+      width="140" />
+    <Button style={{ marginTop: '1em'}} className="s-btn s-black" onClick={action('clicked')}>
+      PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
+      width="30px" />
+    </Button>
+    <img style={{ marginTop: '2em', marginBottom: '2em', transform: 'rotate(-11deg)', bottom: 0 }} src={logoSioup} alt="button burger 140 x 140" />
+    <p style={{ marginTop: '1em' }}> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
+  </PageTemplate>
+)
+
+
 export default Button
