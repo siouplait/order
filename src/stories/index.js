@@ -11,6 +11,7 @@ import { withNotes } from '@storybook/addon-notes'
 import './stories.css'
 import '../index.css'
 import '../class-generic.css'
+
 // components
 import Button from '../components-modules/Button'
 import Input from '../components-modules/Input'
@@ -101,109 +102,97 @@ storiesOf('Input', module)
 // LINK stories
 storiesOf('Link', module)
   .add('link highlighted', () =>
-    <Link className="s-link-highlighted">
+    <Link>Commander sans compte</Link>)
+  .add('link highlighted with white block', () =>
+    <Link block={true} logo={btnSearch}>
       Commander sans compte
     </Link>)
 
 // NAVBAR stories
 storiesOf('Nav', module)
-  .add('Nav menu', () =>
-    <Nav className="s-nav-menu">
-      <Button className="s-btn-icon" onClick={action('clicked')}>
-        <img src={btnBurger} alt="button burger 50 x 50" height="50px"
-          width="50px" />
-      </Button>
-      <Button className="s-btn-icon" onClick={action('clicked')}>
-        <img src={btnBack} alt="button back 50 x 50" height="50px"
-          width="50px" />
-      </Button>
-      <h1>Siouplaît!</h1>
-    </Nav>)
+  .add('Nav menu without btn back and title', () =>
+    <Nav className="s-nav-menu s-nav-noback s-no-title" />)
+  .add('Nav menu without btn back', () =>
+    <Nav className="s-nav-menu s-nav-noback"/>)
+  .add('Nav menu with btn back', () =>
+    <Nav className="s-nav-menu" />)
 
 // PAGE stories
 storiesOf('Page', module)
   .add('Page 1', () =>
-    <PageTemplate className="s-bg-orange">
-      <img src={logoMain} alt="button burger 140 x 140" height="170"
+    <PageTemplate className="s-bg-orange s-justify-content-center">
+      <img className="s-mb-3" src={logoMain} alt="button burger 140 x 140" height="170"
         width="170" />
-      <Button style={{ marginBottom: '4em', position: 'fixed', bottom: 0 }} className="s-btn s-black" onClick={action('clicked')}>
+      <Button className="s-btn s-black s-fixed-b s-mb-4" onClick={action('clicked')}>
         PASSER COMMANDE
       </Button>
     </PageTemplate>
   )
   .add('Page 2', () =>
     <PageTemplate className="s-bg-orange">
-      <img style={{ marginBottom: '1em' }} src={logoMain} alt="button burger 140 x 140" height="100"
+      <img className="s-mt-4" src={logoMain} alt="button burger 140 x 140" height="100"
         width="100" />
-      <Button className="s-btn s-facebook" onClick={action('clicked')}>
+      <Button className="s-btn s-facebook s-mt-1" onClick={action('clicked')}>
         Facebook Connect
       </Button>
-      <Button style={{ marginTop: '1em' }} className="s-btn" onClick={action('clicked')}>
-        Hello Button
+      <Button className="s-btn s-mt-1" onClick={action('clicked')}>
+        S'inscrire
       </Button>
-      <Link style={{ bottom: 0, position: 'fixed', marginBottom: '1em' }} className="s-link-highlighted">
-        Commander sans compte
-      </Link>
+      <Link className="s-fixed-b s-mb-2">Commander sans<br/> compte</Link>
     </PageTemplate>
   )
   .add('Page 3', () =>
     <PageTemplate className="s-bg-orange">
-      <Button style={{ top: 0, left: 0, position: 'fixed', margin: '0.5em' }} className="s-btn-icon" onClick={action('clicked')}>
-        <img src={btnBurger} alt="button burger 20 x 20" height="40" width="40" />
-      </Button>
-      <img style={{ top: 0, position: 'fixed', marginTop: '1em' }} src={logoMain} alt="logo 100 x 100" height="100"
+      <Nav className="s-nav-menu s-nav-noback s-no-title" />
+      <img className="s-mt-1" src={logoMain} alt="logo 100 x 100" height="100"
         width="100" />
-      <img style={{ marginTop: '4em', marginBottom: '1em' }} src={logoQr} alt="logo QR" height="80" width="90"/>
-      <Button className="s-btn" onClick={action('clicked')}>
+      <img className="s-mt-1" src={logoQr} alt="logo QR" height="80" width="90"/>
+      <Button className="s-btn s-mt-05" onClick={action('clicked')}>
         Scanner le QR Code
       </Button>
-      <img src={logoNfcn} alt="logo QR" height="80" width="90" />
+      <img className="s-mt-2" src={logoNfcn} alt="logo QR" height="80" width="90" />
       <Button className="s-btn" onClick={action('clicked')}>
         Androïd : NFC
       </Button>
-      <Link className="s-link-highlighted">
+      <Link block logo={btnSearch}>
         Rechercher un spot
       </Link>
     </PageTemplate>
   )
   .add('Page 4', () =>
     <PageTemplate className="s-bg-orange">
-      <Nav style={{ top: 0, position: 'fixed' }} className="s-nav-menu">
-        <Button className="s-btn-icon" onClick={action('clicked')}>
-          <img src={btnBurger} alt="button burger 50 x 50" height="50px"
-            width="50px" />
+      <Nav className="s-nav-menu s-nav-noback"/>
+      <div className="s-fixed-b">
+        <img className="" src={logoNfcn} alt="logo QR" height="80" width="80" />
+        <p className="s-px-2">
+          Posez votre <span className="s-bold-light">téléphone</span> sur les <span className="s-bold-light">jolis ronds connectés</span>,
+          et découvrez directement le <span className="s-bold-light">menu du spot où vous êtes</span>
+        </p>
+        <p><img src={logoMain} alt="logo 100 x 100" height="75"
+          width="75" /></p>
+        <Button className="s-btn-icon s-my-2" onClick={action('clicked')}>
+          <img src={btnBack} alt="button back 60 x 60" height="60px"
+            width="60px" />
         </Button>
-        <Button className="s-btn-icon" onClick={action('clicked')}>
-          <img src={btnBack} alt="button back 50 x 50" height="50px"
-            width="50px" />
-        </Button>
-        <h1>Siouplaît!</h1>
-      </Nav>
-      <img style={{ marginTop: '7em' }} src={logoNfcn} alt="logo QR" height="80" width="80" />
-      <p style={{ padding: '0 3em', textAlign: 'center' }}>Posez votre téléphone sur les jolis ronds connectés, et découvrez directement le menu du spot où vous êtes</p>
-      <img style={{ marginTop: '2.5em'}} src={logoMain} alt="logo 100 x 100" height="75"
-        width="75" />
-      <Button style={{ marginTop: '6em' }} className="s-btn-icon" onClick={action('clicked')}>
-        <img src={btnBack} alt="button back 60 x 60" height="60px"
-          width="60px" />
-      </Button>
+      </div>
     </PageTemplate>
   )
   .add('Logout Page', () =>
     <PageTemplate className="s-bg-orange">
-      <h1 style={{ marginTop: 0 }}> #EtMerci! </h1>
-      <p> Le "Name of the place" prépare votre commande.
+      <h1 className=" merci s-mt-1 s-mb-0"> #EtMerci! </h1>
+      <p className="s-mt-0 s-ml-05 s-mr-05"> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
       <img src={logoMain} alt="button burger 140 x 140" height="140"
         width="140" />
-      <Button style={{ marginTop: '1em'}} className="s-btn s-black" onClick={action('clicked')}>
+      <Button className="s-btn s-black s-mt-1" onClick={action('clicked')}>
         PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px"
         width="30px" />
       </Button>
-      <img style={{ marginTop: '2em', marginBottom: '2em', transform: 'rotate(-11deg)', bottom: 0 }} src={logoSioup} alt="button burger 140 x 140" />
-      <p style={{ marginTop: '1em' }}> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
+      <img style={{ transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" className="s-mt-2" height='50' />
+      <p className="s-mt-2 s-ml-05 s-mr-05"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
 
+ 
 export default Button
