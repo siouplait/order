@@ -1,5 +1,7 @@
 .thumbnail {
     margin: 1em;
+    display: inline-block;
+    vertical-align: center;
 }
 
 .img-thumbnail {
@@ -10,6 +12,7 @@
 }
 
 .detail-thumbnail{
+    margin-top: 1px;
     padding: 4px;
     text-align: center;
     border: 1px solid #ddd;

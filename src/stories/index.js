@@ -35,11 +35,11 @@ import logoSioup from '../icon/logo_sioup.png'
 // welcome
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')}/>)
 
-// test Thumbnail
+// Thumbnail story
 storiesOf('Thumbnail', module)
   .add('Thumbnail item', () =>
     <Thumbnail src="http://via.placeholder.com/350x150">
-     Name item Name item
+      Name item Name item
       item Name item
       PRIX
     </Thumbnail>
@@ -56,7 +56,6 @@ storiesOf('Button', module)
     Hello Button
     </Button>`
   ))
-
   .add('Btn facebook', () =>
     <Button className="s-btn s-facebook" onClick={action('clicked')}>
       Facebook Connect
@@ -182,14 +181,48 @@ storiesOf('Page', module)
       <p className="s-mt-0 s-ml-05 s-mr-05"> Le "Name of the place" prépare votre commande.
         <br/>Vous recevrez une notification quand celle-ci sera prête.
       </p>
-      <img src={logoMain} alt="button burger 140 x 140" height="180" width="180"/>
+      <img src={logoMain} alt="button burger 140 x 140" height="150" width="150"/>
       <Button className="s-btn s-black s-mt-1" onClick={action('clicked')}>
         PARTAGER <img className="s-icon-symetric" src={btnBack} alt="button share 30 x 30" height="30px" width="30px"/>
       </Button>
       <img style={{transform: 'rotate(-11deg)'}} src={logoSioup} alt="button burger 140 x 140" className="s-mt-2" height='50'/>
       <p className="s-mt-2 s-ml-05 s-mr-05"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
-      <p className="s-mt-2 s-ml-05 s-mr-05"> MAIS C'EST NOUS QUI VOUS REMERCIONS </p>
     </PageTemplate>
   )
-
+  .add('Menu card', () =>
+    <PageTemplate className="s-bg-white">
+      <Nav className="s-nav-menu"/>
+      <div style={{marginTop: '4em'}}>
+        <h1>NOM DU SPOT</h1>
+        <p>CATEGORY NAME</p>
+      </div>
+      <InputLogo className="s-block-input-logo" style={{marginTop: '1em'}}>
+        <Input className="s-input" placeholder="Search"/>
+        <Button className="s-btn-icon" onClick={action('clicked')}>
+          <img src={btnSearch} alt="button burger 30 x 30" height="20px" width="20px"/>
+        </Button>
+      </InputLogo>
+      <div>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+        <Thumbnail src="http://via.placeholder.com/350x150">
+          Name item Name item Name item PRIX
+        </Thumbnail>
+      </div>
+    </PageTemplate>
+  )
+  
 export default Button
