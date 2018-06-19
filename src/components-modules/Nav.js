@@ -6,15 +6,12 @@ import btnBack from '../icon/btn_back.svg'
 import './Button.css'
 import './Nav.css'
 
-const Nav = ({ children, ...rest }) =>
-  <div {...rest}>{children}
-    <Button className="s-btn-icon">
-      <img className="s-btn-img-resize" src={btnBurger} alt="button burger" />
-    </Button>
-    <Button className="s-btn-icon">
-      <img className="s-btn-img-resize" src={btnBack} alt="button back" />
-    </Button>
+const Nav = ({ actionBurger, actionBack, children, ...rest }) =>
+  <div {...rest}>
+    {children}
+    <Button action={actionBurger} icon={btnBurger} iconHeight="1.7" />
     <h1>Siouplaît!</h1>
+    <Button action={actionBack} icon={btnBack} iconHeight="2" />
   </div>
 
 export default Nav

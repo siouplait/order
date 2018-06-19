@@ -1,5 +1,10 @@
-/* BTN  */
-.s-btn {
+div.s-block-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.s-btn {
     background-color: transparent;
     height: 3em;
     width: auto;
@@ -8,32 +13,30 @@
     border-radius: 5px;
 }
 
-.s-facebook {
+button.s-facebook {
     border: 1px solid #014A94;
     background-color: #014A94;
     color: #fff;
 }
 
-.s-black {
+button.s-black {
     border: none;
     background-color: white;
     filter: invert(100%);
 }
 
-.s-btn-icon {
+button.s-btn-icon {
     padding: 0;
     background-color: transparent;
     border: transparent;
 }
 
-/* ICON */
-.s-icon-symetric {
+img.s-icon-symetric {
     margin-left: 0.5em;
     vertical-align: middle;
     transform: scaleX(-1);
 }
 
-img.s-btn-img-resize {
-  width: 2.7em;
-  height: 10vh;
+img.s-img-logo {
+    margin-bottom: 0.5em;
 }

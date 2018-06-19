@@ -1,0 +1,17 @@
+div.thumbnail {
+    margin: 0.2em 0.1em;
+    width: 30vw;
+}
+
+img.img-thumbnail {
+    border: 1px solid #ddd;
+    padding: 2px;
+    margin: 0;
+}
+
+p.detail-thumbnail{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1px;
+    margin: 0;
+}

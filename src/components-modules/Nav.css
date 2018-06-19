@@ -1,38 +1,51 @@
-.s-nav-menu {
-    background-color: #FFB72D;
-    text-align: center;
-    line-height: 3em;
-    position: fixed;
-    width: 100%;
-    top: 0;
+@font-face {
+	font-family: "Ma Super Fonte";
+  src: url('../font/file.woff');
 }
 
-.s-nav-menu > h1 {
-    font-size: 6vh;
+div.s-nav-menu {
+  background-color: #FFB72D;
+  display: flex;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.s-nav-menu > button:first-child, .s-btn-burger {
-    position: fixed;
-    left: 0;
-    margin-left: 5px;
-    /* background-color: aqua; */
+div.s-nav-menu > h1 {
+  font-family: "Ma Super Fonte";
 }
 
-.s-nav-menu > button + button {
-    position: fixed;
-    right: 0;
-    margin-right: 5px;
-    /* background-color: aqua; */
+div.s-nav-menu > div:first-child > button, div.s-btn-burger {
+  /* margin-top: 5px; */
+  margin-left: 5px;
 }
 
-.s-nav-noback > button + button {
-    display: none;
+div.s-nav-menu > div:last-child > button {
+  margin-right: 5px;
 }
 
-.s-no-title {
-    background-color: transparent;
+div.s-nav-noback > div:last-child > button {
+  visibility: hidden;
 }
 
-.s-no-title > h1 {
-    display: none;
+div.s-no-title {
+  background-color: #FFB72D;
+}
+
+div.s-no-title > h1 {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  div.s-nav-menu > h1 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  div.s-nav-menu > h1 {
+    font-size: 5vh;
+  }
 }

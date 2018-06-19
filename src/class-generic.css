@@ -119,11 +119,9 @@
 .s-fixed-tr {position: fixed; top: 0; right: 0}
 .s-fixed-tl {position: fixed; top: 0; left: 0}
 
-/* TEXT */
-.s-bold-light {
-  font-weight: 500;
-}
-
-.s-justify-content-center {
+.s-d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
 }
