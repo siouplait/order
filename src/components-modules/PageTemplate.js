@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import './PageTemplate.css'
+import '../class-generic.css'
 
 const PageTemplate = ({ nav, children, className }) => {
   return (
