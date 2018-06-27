@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-// import SwipeableViews from 'react-swipeable-views'
-import './App.css'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { Router } from "@reach/router"
 import './class-generic.css'
+import './App.css'
 
 import Page1 from './components-pages/Page1'
 import Page2 from './components-pages/Page2'
@@ -17,22 +16,21 @@ import LogOut from './components-pages/LogOut'
 // import SupportTouch from 'docs/src/modules/components/SupportTouch';
 
 class App extends Component {
-  render () {
+  render() {
     return (
-     <BrowserRouter>
-       <Switch>
-         <Route exact path='/' component={Page1}/>
-         <Route path='/Connection' component={Page2}/>
-         <Route path='/ConnectSpot' component={Page3}/>
-         <Route path='/ConnectNfc' component={Page4}/>
-         <Route path='/SpotsSearch' component={SpotsSearch}/>
-         <Route path='/MenuCategory' component={MenuCategory}/>
-         <Route path='/Menu' component={SelectMenu}/>
-         <Route path='/CommandePage' component={CommandePage}/>
-         <Route path='/LogOut' component={LogOut}/>
-       </Switch>
-     </BrowserRouter>
+      <Router>
+        <Page1 path='/' component={Page1}/>
+        <Page2 path='/Connection' component={Page2}/>
+        <Page3 path='/ConnectSpot' component={Page3}/>
+        <Page4 path='/ConnectNfc' component={Page4}/>
+        <SpotsSearch path='/SpotsSearch' component={SpotsSearch}/>
+        <MenuCategory path='/MenuCategory' component={MenuCategory}/>
+        <SelectMenu path='/Menu' component={SelectMenu}/>
+        <CommandePage path='/CommandePage' component={CommandePage}/>
+        <LogOut path='/LogOut' component={LogOut}/>
+      </Router>
     )
   }
 }
+
 export default App

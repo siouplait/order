@@ -13,11 +13,11 @@ const SlideMenu = () =>
   <div className="s-block-slide-menu">
 
     <div className="s-menu-landscape">
-      <img className="s-mt-5" src={logoHeart} style={{ width: '4em', borderRadius: '100px', backgroundColor: 'silver' }} />
+      <img className="s-mt-5" src={logoHeart} style={{width: '4em', borderRadius: '100px', backgroundColor: 'silver'}}/>
       <p>Say my name</p>
     </div>
 
-    <LinkTemplate text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color:'black'}}/>
+    <LinkTemplate text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color: 'black'}}/>
 
     <div>
       <ul className="s-link-menu">
@@ -30,13 +30,13 @@ const SlideMenu = () =>
     </div>
 
     <div className="s-menu-landscape s-fixed-b">
-      <p className="s-question-input" >Pas Siouplait dans ce spot ? <br /> on arrive !</p>
+      <p className="s-question-input">Pas Siouplait dans ce spot ? <br/> on arrive !</p>
       <div className="s-form-menu">
-        <input className="s-input-menu" type="text" placeholder="Nom du Spot ..." />
-        <Button classIcon="s-form-menu-btn" icon={downArrow} iconHeight="2em" />
+        <input className="s-input-menu" type="text" placeholder="Nom du Spot ..."/>
+        <Button classIcon="s-form-menu-btn" icon={downArrow} iconHeight="2em"/>
       </div>
-      <Button icon={logoThumb} iconHeight="2em" />
-      <p><span className="s-menu-year" >©</span> Siouplaît - <span className="s-menu-year">2018</span></p>
+      <Button icon={logoThumb} iconHeight="2em"/>
+      <p><span className="s-menu-year">©</span> Siouplaît - <span className="s-menu-year">2018</span></p>
     </div>
 
   </div>

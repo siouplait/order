@@ -9,7 +9,7 @@ import btnBack from '../icon/btn_back.svg'
 class Page4 extends React.Component {
   render(){
     return(
-      <PageTemplate nav="s-nav-noback" center className="s-bg-orange">
+      <PageTemplate nav="s-nav-noback"  center className="s-bg-orange">
         <div className="s-mb-16">
           <img
             className="s-mt-"

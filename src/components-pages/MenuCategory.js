@@ -3,6 +3,7 @@ import PageTemplate from '../components-modules/PageTemplate'
 import Input from '../components-modules/Input'
 import Headertext from '../components-modules/Headertext'
 import SpotCategory from '../components-modules/SpotCategory'
+import {Link} from '@reach/router'
 
 import btnSearch from '../icon/btn_search.svg'
 
@@ -23,14 +24,16 @@ class MenuCategory extends React.Component {
         </div>
 
         <div full className="s-d-flex">
-          <SpotCategory
-            items={["PETIT DEJ", "APERO", "BOISSONS"]}
-            src={[
-              "../img/petitdej.png",
-              "../img/apero.png",
-              "../img/boisson.png"
-            ]}
-          />
+          <Link to="/Menu">
+            <SpotCategory
+              items={["PETIT DEJ", "APERO", "BOISSONS"]}
+              src={[
+                "../img/petitdej.png",
+                "../img/apero.png",
+                "../img/boisson.png"
+              ]}
+            />
+          </Link>
         </div>
       </PageTemplate>
     )

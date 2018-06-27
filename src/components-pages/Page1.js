@@ -2,7 +2,7 @@ import React from 'react'
 import PageTemplate from '../components-modules/PageTemplate'
 import Button from '../components-modules/Button'
 import logoMain from '../icon/logo_main.png'
-import {Link} from 'react-router-dom'
+import {Link} from '@reach/router'
 
 
 class Page1 extends React.Component {
@@ -15,7 +15,9 @@ class Page1 extends React.Component {
           alt="button burger"
           style={{height: "15em"}}
         />
-        <Link to='/Connection'><Button text="PASSER COMMANDE" position="s-mb-4" className="s-black"/></Link>
+        <Link to='/Connection'>
+          <Button text="PASSER COMMANDE" position="s-mb-4" className="s-black"/>
+        </Link>
       </PageTemplate>
     )
   }

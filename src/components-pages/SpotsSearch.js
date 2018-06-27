@@ -6,6 +6,7 @@ import LinkTemplate from '../components-modules/LinkTemplate'
 import btnSearch from '../icon/btn_search.svg'
 import logoHeart from '../icon/logo_heart.svg'
 import imgSpot from '../img/imgSpot.png'
+import {Link} from '@reach/router'
 
 class SpotsSearch extends React.Component {
   render() {
@@ -28,7 +29,9 @@ class SpotsSearch extends React.Component {
         </div>
 
         <div full className="s-d-flex s-mt-3 s-pb-10">
-          <Itemspots src={imgSpot} />
+          <Link to='/MenuCategory'>
+            <Itemspots src={imgSpot} />
+          </Link>
           <Itemspots src={imgSpot} />
           <Itemspots src={imgSpot} />
           <Itemspots src={imgSpot} />

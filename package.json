@@ -4,8 +4,9 @@
   "private": true,
   "homepage": "https://siouplait.github.io/order",
   "dependencies": {
+    "@reach/router": "^1.1.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.4.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "1.1.4",
     "react-swipeable-views": "^0.12.14"
