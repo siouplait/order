@@ -1,0 +1,45 @@
+div.s-block-spotcategory {
+    height: 100%;
+    padding-bottom: 10vh;
+}
+
+div.thumbnailcategory {
+    position: relative;
+    margin: 0.2em 0.1em;
+    justify-content: center;
+    display: flex;
+    margin-top: 1em;
+}
+
+img.img-thumbnail {
+    height: 20vh;
+    width: 85%;
+    border: 1px solid #ddd;
+    padding: 2px;
+    margin: 0;
+}
+
+div.detail-thumbnail{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0 0 5px 0;
+    text-align: center;
+    width: 85%;
+    line-height: 2.7em;
+    border-bottom: 1px solid silver;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (orientation: landscape) {
+    div.thumbnailcategory {
+        width: 40%;
+    }
+    div.s-block-spotcategory {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

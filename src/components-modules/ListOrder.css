@@ -1,0 +1,33 @@
+div.s-block-list-order {
+  display: flex;
+  justify-content: center;
+}
+
+table.s-table-order {
+  border-collapse: collapse;
+  width: 90vw;
+}
+
+table.s-table-order tr {
+  height: 6vh;
+  border-bottom: 1px dotted silver;
+}
+
+th.s-t-qte, td.s-t-qte {
+  text-align: center;
+}
+
+th.s-t-article, td.s-t-article {
+  padding-left: 1em;
+  text-align: left;
+}
+
+th.s-t-price, td.s-t-price {
+  white-space: nowrap;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.s-td-modif {
+  font-size: 0.7em;
+}

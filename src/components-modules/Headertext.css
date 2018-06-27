@@ -2,3 +2,7 @@ h2.s-title-header, h5.s-title-header {
   margin: 0.4em;
   padding: 0;
 }
+
+h2.s-title-header {
+  text-decoration: underline;
+}
