@@ -7,15 +7,15 @@ import btnBack from '../icon/btn_back.svg'
 
 
 class Page4 extends React.Component {
-  render(){
-    return(
-      <PageTemplate nav="s-nav-noback"  center className="s-bg-orange">
+  render() {
+    return (
+      <PageTemplate nav="s-nav-noback" center className="s-bg-orange">
         <div className="s-mb-16">
           <img
             className="s-mt-"
             src={logoNfcn}
             alt="logo QR"
-            style={{ height: "5em" }}
+            style={{height: "5em"}}
           />
           <p className="s-px-2">
             Posez votre <span className="s-text-bold">téléphone</span> sur les{" "}
@@ -27,10 +27,15 @@ class Page4 extends React.Component {
             className="s-landscape-hidden"
             src={logoMain}
             alt="logo"
-            style={{ height: "4em" }}
+            style={{height: "4em"}}
           />
         </div>
-        <Button className="s-fixed-b s-mb-5" icon={btnBack} iconHeight="4em" />
+        <Button className="s-fixed-b s-mb-5"
+                action={() => {
+                  window.history.back()
+                }}
+                icon={btnBack}
+                iconHeight="4em"/>
       </PageTemplate>
 
     )
