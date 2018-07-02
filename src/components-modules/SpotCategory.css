@@ -11,6 +11,11 @@ div.thumbnailcategory {
     margin-top: 1em;
 }
 
+ /* A VOIR  !!!!!!!!!!!!!!!!!!!! */ 
+.thumbnailcategory a {
+    display: flex;
+}
+
 img.img-thumbnail {
     height: 20vh;
     width: 85%;

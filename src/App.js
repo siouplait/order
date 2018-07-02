@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Router } from "@reach/router"
+import { Router } from '@reach/router'
 import './class-generic.css'
 import './App.css'
 
@@ -16,7 +16,7 @@ import LogOut from './components-pages/LogOut'
 // import SupportTouch from 'docs/src/modules/components/SupportTouch';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <Router>
         <Page1 path='/' component={Page1}/>

@@ -2,11 +2,10 @@ import React from 'react'
 import PageTemplate from '../components-modules/PageTemplate'
 import Button from '../components-modules/Button'
 import logoMain from '../icon/logo_main.png'
-import LinkTemplate from "../components-modules/LinkTemplate"
-import {Link} from '@reach/router'
+import LinkTemplate from '../components-modules/LinkTemplate'
 
 class Page2 extends React.Component {
-  render() {
+  render () {
     return (
       <PageTemplate className="s-bg-orange">
         <div className="s-mt-12">
@@ -16,11 +15,9 @@ class Page2 extends React.Component {
             <Button text="S'inscrire" position="s-mt-3"/>
           </div>
         </div>
-        <Link to='/ConnectSpot'>
-          <LinkTemplate className="s-fixed-b s-mb-3">
-            Commander sans<br/>compte
-          </LinkTemplate>
-        </Link>
+        <LinkTemplate to='/ConnectSpot' className="s-fixed-b s-mb-3">
+          Commander sans<br/>compte
+        </LinkTemplate>
       </PageTemplate>
     )
   }

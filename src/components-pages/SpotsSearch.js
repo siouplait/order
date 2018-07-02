@@ -9,7 +9,7 @@ import imgSpot from '../img/imgSpot.png'
 import {Link} from '@reach/router'
 
 class SpotsSearch extends React.Component {
-  render() {
+  render () {
     return (
       <PageTemplate nav className="s-bg-white">
         <div full className="s-mt-2">
@@ -21,6 +21,7 @@ class SpotsSearch extends React.Component {
             placeholder="Search"
           />
           <LinkTemplate
+            to="/MenuCategory"
             className="s-mt-1"
             text="MES SPOTS"
             logo={logoHeart}
