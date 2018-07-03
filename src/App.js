@@ -13,7 +13,6 @@ import SelectMenu from './components-pages/SelectMenu'
 import CommandePage from './components-pages/CommandePage'
 import LogOut from './components-pages/LogOut'
 
-// import SupportTouch from 'docs/src/modules/components/SupportTouch';
 
 class App extends Component {
   render () {
