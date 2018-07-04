@@ -16,7 +16,6 @@ class SelectMenu extends React.Component {
   }
 
   render () {
-    console.log(this.props.order.length)
     return (
       <PageTemplate nav className="s-bg-white">
         <div full="true" className="s-d-flex1">

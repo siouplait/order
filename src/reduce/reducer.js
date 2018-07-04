@@ -38,12 +38,10 @@ const reducers = (state, action) => {
           ...state,
           order: state.order.map(e => e.id === orderedItem.id
             ? { ...orderedItem, qty: orderedItem.qty + action.num <= 0 ? 0 : orderedItem.qty + action.num }
-            : e)
+            : e).filter(e => e.qty !== 0)
         }
       }
       return { ...state, order: [...state.order, { ...action.order, qty: action.num < 0 ? 0 : action.num }] }
-    case 'CLEAN_ORDER':
-      return { ...state, order: state.order.filter(e => e.qty !== 0) }
     default:
       return state
   }
@@ -68,7 +66,6 @@ export const actions = {
   switchMenu: () => store.dispatch({ type: 'SWITCH_MENU_SLIDE' }),
   switchItem: (product) => store.dispatch({ type: 'SWITCH_ITEM_SLIDE', product }),
   updateOrder: (order, num) => store.dispatch({ type: 'UPDATE_ORDER', order, num }),
-  cleanOrder: () => store.dispatch({ type: 'CLEAN_ORDER' })
 }
 
 export const store = createStore(reducers, initialState)
