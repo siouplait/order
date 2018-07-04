@@ -2,7 +2,7 @@ import React from 'react'
 import LinkTemplate from './LinkTemplate'
 import './ListOrder.css'
 
-const ListOrder = ({list}) =>
+const ListOrder = ({ list }) =>
   <div className="s-block-list-order">
     <table className="s-table-order">
       <thead>
@@ -15,10 +15,10 @@ const ListOrder = ({list}) =>
       </thead>
       <tbody>
         {list.map((item, index) =>
-          <tr key={index}>
-            <td className="s-t-qte">{item.qte}</td>
+          <tr key={`list-${index}`}>
+            <td className="s-t-qte">{item.qty}</td>
             <td className="s-t-article">{item.name}</td>
-            <td className="s-t-price">{(item.price * item.qte).toFixed(2)} €</td>
+            <td className="s-t-price">{(item.price * item.qty).toFixed(2)} €</td>
             <td><LinkTemplate className="s-td-modif" text="Modifier"/></td>
           </tr>
         )}

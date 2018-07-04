@@ -10,26 +10,15 @@ class CommandePage extends React.Component {
   render () {
     return (
       <PageTemplate nav className="s-bg-white">
-        <div full className="s-d-flex1">
+        <div full="true" className="s-d-flex1">
           <Headertext title="VOTRE COMMANDE" subtitle="JJ.MM.AA  HH:MM" />
         </div>
-
         <div center>
           <ListOrder
-            list={[
-              { qte: 2, name: 'Burger', price: 8.1, id: 1 },
-              { qte: 1, name: 'coca', price: 1.5, id: 12 },
-              { qte: 1, name: 'Salade', price: 4.4, id: 100 },
-              { qte: 2, name: 'Mousse au chocolat', price: 7.4, id: 8 }
-            ]}
+            list={this.props.order}
           />
           <TotalOrder
-            list={[
-              { qte: 2, name: 'Burger', price: 8.1, id: 1 },
-              { qte: 1, name: 'coca', price: 1.5, id: 12 },
-              { qte: 1, name: 'Salade', price: 4.4, id: 100 },
-              { qte: 2, name: 'Mousse au chocolat', price: 7.4, id: 8 }
-            ]}
+            list={this.props.order}
           />
           <Tip />
           <div className="s-pb-7">
