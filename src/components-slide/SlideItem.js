@@ -20,7 +20,6 @@ const getQty = (product, order) => {
 
 const SlideItem = ({ order, product, itemOpen }) => 
   <div className="s-block-slide-item" style={{ transform: itemOpen ? 'translate(0%)' : 'translate(100%)' }}>
-    {console.log(order)}
     <div className="s-thumbnail-slide s-mt-1">
       <img
         src={product.custom_image && product.custom_image}

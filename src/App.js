@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import { store, actions } from './reduce/reducer'
 import { Router } from '@reach/router'
 import './class-generic.css'
-import './App.css'
+import './index.css'
 
 import Page1 from './components-pages/Page1'
 import Page2 from './components-pages/Page2'
@@ -28,7 +28,7 @@ class App extends Component {
 
   render () {
     return (
-      <div>
+      <React.Fragment>
         <SlideMenu {...this.state} />
         <SlideItem {...this.state} />
         <Router>
@@ -42,7 +42,7 @@ class App extends Component {
           <CommandePage {...this.state} path='/commande-page' component={CommandePage} />
           <LogOut {...this.state} path='/logout' component={LogOut} />
         </Router>
-      </div>
+      </React.Fragment>
     )
   }
 }

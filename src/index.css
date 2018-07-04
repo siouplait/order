@@ -1,17 +1,4 @@
-/* body {
-  margin: 0;
-  padding: 0;
-} */
-
 * {font-size: 3vh;}
-
-/* @media screen and (orientation: landscape) {
-  * {font-size: 3vw;}
-}
-
-@media screen and (orientation: portrait) {
-  * {font-size: 3vh;}
-} */
 
 h1 {
   font-size: 5vh;

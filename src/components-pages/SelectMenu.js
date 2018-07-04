@@ -1,5 +1,5 @@
 import React from 'react'
-import { store, actions } from '../reduce/reducer'
+import { actions } from '../reduce/reducer'
 
 import PageTemplate from '../components-modules/PageTemplate'
 import Input from '../components-modules/Input'
@@ -17,7 +17,7 @@ class SelectMenu extends React.Component {
   render () {
     return (
       <PageTemplate nav className="s-bg-white">
-        <div full className="s-d-flex1">
+        <div full="true" className="s-d-flex1">
           <Headertext
             title={this.props.place.title}
             subtitle={this.props.place.address &&
@@ -33,8 +33,7 @@ class SelectMenu extends React.Component {
             placeholder="Search"
           />
         </div>
-        {/* {console.log(this.props.place.card && this.props.place.card.products[1])} */}
-        <div full className="s-d-flex">
+        <div full="true" className="s-d-flex">
           {this.props.place.card && this.props.place.card.products.filter(e => {
             return (
               this.props.category !== 'undefined' ? e._card_category_id === this.props.category : true

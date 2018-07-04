@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../components-modules/Button'
 import imgTip from '../icon/pourboire.png'
 import './Tip.css'
 

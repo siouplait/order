@@ -7,7 +7,6 @@ import Headertext from '../components-modules/Headertext'
 import SpotCategory from '../components-modules/SpotCategory'
 // icon
 import btnSearch from '../icon/btn_search.svg'
-import imgPetitdej from '../img/petitdej.png'
 
 class MenuCategory extends React.Component {
   constructor (props) {
@@ -18,7 +17,7 @@ class MenuCategory extends React.Component {
   render () {
     return (
       <PageTemplate nav className="s-bg-white">
-        <div full className="s-d-flex1">
+        <div full="true" className="s-d-flex1">
           <Headertext
             title={this.props.place.title}
             subtitle={this.props.place.address &&
@@ -36,7 +35,7 @@ class MenuCategory extends React.Component {
           />
         </div>
 
-        <div full className="s-d-flex">
+        <div full="true" className="s-d-flex">
           <SpotCategory
             to={this.props.food_category.map(e => `/menu/${this.props.id}/${e.id}`)}
             items={this.props.food_category.map(e => e.name)}
