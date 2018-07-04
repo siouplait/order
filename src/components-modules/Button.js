@@ -9,8 +9,8 @@ const Button = ({ position, style, action, iconHeight, logoHeight, classIcon, ic
       {
         icon ? <img
           src={icon}
-          style={{ height: iconHeight}}
-          className={classIcon ? classIcon : "s-icon-normal"}
+          style={{ height: iconHeight }}
+          className={classIcon || 's-icon-normal'}
           alt="icon" /> : ''
       }
     </button>

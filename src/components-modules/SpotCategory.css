@@ -14,6 +14,8 @@ div.thumbnailcategory {
  /* A VOIR  !!!!!!!!!!!!!!!!!!!! */ 
 .thumbnailcategory a {
     display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 img.img-thumbnail {

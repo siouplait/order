@@ -27,7 +27,7 @@ class Page3 extends React.Component {
             logo={logoQr}
             logoHeight="5em"
           />
-          <Link to='/ConnectNfc'>
+          <Link to='/connect-nfc'>
             <Button
               position="s-mt-3"
               text="Androïd : NFC"
@@ -38,7 +38,7 @@ class Page3 extends React.Component {
         </div>
         <LinkTemplate
         // EN ATTENTE DE CHEMIN
-          to="/SpotsSearch"
+          to="/spots-search"
           block
           className="s-fixed-b"
           text="Chercher un autre spot"

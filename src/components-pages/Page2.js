@@ -9,13 +9,13 @@ class Page2 extends React.Component {
     return (
       <PageTemplate className="s-bg-orange">
         <div className="s-mt-12">
-          <img src={logoMain} alt="logo principal" style={{height: "10em"}}/>
+          <img src={logoMain} alt="logo principal" style={{height: '10em'}}/>
           <div className="s-block-landscape s-mt-4">
             <Button text="Facebook Connect" className="s-facebook"/>
             <Button text="S'inscrire" position="s-mt-3"/>
           </div>
         </div>
-        <LinkTemplate to='/ConnectSpot' className="s-fixed-b s-mb-3">
+        <LinkTemplate to='/connect-spot' className="s-fixed-b s-mb-3">
           Commander sans<br/>compte
         </LinkTemplate>
       </PageTemplate>

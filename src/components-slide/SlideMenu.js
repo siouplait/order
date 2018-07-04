@@ -9,15 +9,14 @@ import downArrow from '../icon/Down_arrow_icon.svg'
 
 import './SlideMenu.css'
 
-const SlideMenu = () =>
-  <div className="s-block-slide-menu">
-
+const SlideMenu = ({ menuOpen }) =>
+  <div className="s-block-slide-menu" style={{ transform: menuOpen ? 'translate(0%)' : 'translate(-100%)' }}>
     <div className="s-menu-landscape">
-      <img className="s-mt-5" src={logoHeart} style={{width: '4em', borderRadius: '100px', backgroundColor: 'silver'}}/>
+      <img className="s-mt-5" src={logoHeart} style={{width: '4em', borderRadius: '100px', backgroundColor: 'silver'}} alt="heart logo"/>
       <p>Say my name</p>
     </div>
 
-    <LinkTemplate text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color: 'black'}}/>
+    <LinkTemplate to="/spots-search" text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color: 'black'}}/>
 
     <div>
       <ul className="s-link-menu">
@@ -29,7 +28,7 @@ const SlideMenu = () =>
       </ul>
     </div>
 
-    <div className="s-menu-landscape s-fixed-b">
+    <div className="s-menu-landscape">
       <p className="s-question-input">Pas Siouplait dans ce spot ? <br/> on arrive !</p>
       <div className="s-form-menu">
         <input className="s-input-menu" type="text" placeholder="Nom du Spot ..."/>

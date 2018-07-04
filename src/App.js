@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { store, actions } from './reduce/reducer'
 import { Router } from '@reach/router'
 import './class-generic.css'
 import './App.css'
@@ -12,23 +13,36 @@ import MenuCategory from './components-pages/MenuCategory'
 import SelectMenu from './components-pages/SelectMenu'
 import CommandePage from './components-pages/CommandePage'
 import LogOut from './components-pages/LogOut'
-
-// import SupportTouch from 'docs/src/modules/components/SupportTouch';
+import SlideMenu from './components-slide/SlideMenu'
+import SlideItem from './components-slide/SlideItem'
 
 class App extends Component {
+  constructor () {
+    super()
+    this.state = store.getState()
+    store.subscribe(() => {
+      this.setState(store.getState())
+    })
+    actions.getPlace()
+  }
+
   render () {
     return (
-      <Router>
-        <Page1 path='/' component={Page1}/>
-        <Page2 path='/Connection' component={Page2}/>
-        <Page3 path='/ConnectSpot' component={Page3}/>
-        <Page4 path='/ConnectNfc' component={Page4}/>
-        <SpotsSearch path='/SpotsSearch' component={SpotsSearch}/>
-        <MenuCategory path='/MenuCategory' component={MenuCategory}/>
-        <SelectMenu path='/Menu' component={SelectMenu}/>
-        <CommandePage path='/CommandePage' component={CommandePage}/>
-        <LogOut path='/LogOut' component={LogOut}/>
-      </Router>
+      <div>
+        <SlideMenu {...this.state} />
+        <SlideItem {...this.state} />
+        <Router>
+          <Page1 {...this.state} path='/' component={Page1} />
+          <Page2 {...this.state} path='/connection' component={Page2} />
+          <Page3 {...this.state} path='/connect-spot' component={Page3} />
+          <Page4 {...this.state} path='/connect-nfc' component={Page4} />
+          <SpotsSearch {...this.state} path='/spots-search' component={SpotsSearch} />
+          <MenuCategory {...this.state} path='/menu-category/:id' component={MenuCategory} />
+          <SelectMenu {...this.state} path='/menu/:id/:category' component={SelectMenu} />
+          <CommandePage {...this.state} path='/commande-page' component={CommandePage} />
+          <LogOut {...this.state} path='/logout' component={LogOut} />
+        </Router>
+      </div>
     )
   }
 }

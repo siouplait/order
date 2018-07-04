@@ -9,10 +9,10 @@ const SpotCategory = ({ to, items = [], src = [] }) =>
       <div key={index} className="thumbnailcategory">
         <Link to={to[index]}>
           <img className="img-thumbnail" src={src[index]} alt={`item-img${[index]}`} />
+          <div className="detail-thumbnail">
+            <span>{item === undefined ? 'Tous' : item}</span>
+          </div>
         </Link>
-        <div className="detail-thumbnail">
-          <span>{item}</span>
-        </div>
       </div>
     )}
   </div>

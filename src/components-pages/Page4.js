@@ -5,9 +5,8 @@ import logoMain from '../icon/logo_main.png'
 import logoNfcn from '../icon/logo_nfcn.png'
 import btnBack from '../icon/btn_back.svg'
 
-
 class Page4 extends React.Component {
-  render() {
+  render () {
     return (
       <PageTemplate nav="s-nav-noback" center className="s-bg-orange">
         <div className="s-mb-16">
@@ -15,27 +14,27 @@ class Page4 extends React.Component {
             className="s-mt-"
             src={logoNfcn}
             alt="logo QR"
-            style={{height: "5em"}}
+            style={{height: '5em'}}
           />
           <p className="s-px-2">
-            Posez votre <span className="s-text-bold">téléphone</span> sur les{" "}
+            Posez votre <span className="s-text-bold">téléphone</span> sur les
             <span className="s-text-bold">jolis ronds connectés</span>, et
-            découvrez directement le{" "}
+            découvrez directement le
             <span className="s-text-bold">menu du spot où vous êtes</span>
           </p>
           <img
             className="s-landscape-hidden"
             src={logoMain}
             alt="logo"
-            style={{height: "4em"}}
+            style={{height: '4em'}}
           />
         </div>
         <Button className="s-fixed-b s-mb-5"
-                action={() => {
-                  window.history.back()
-                }}
-                icon={btnBack}
-                iconHeight="4em"/>
+          action={() => {
+            window.history.back()
+          }}
+          icon={btnBack}
+          iconHeight="4em"/>
       </PageTemplate>
 
     )

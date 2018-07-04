@@ -6,15 +6,13 @@ import logoMain from '../icon/logo_main.png'
 import btnBack from '../icon/btn_back.svg'
 import logoTitle from '../icon/logo_title.png'
 
-
 class LogOut extends React.Component {
-  render(){
-    return(
+  render () {
+    return (
       <PageTemplate center className="s-bg-orange">
         <div className="s-fixed-t">
           <h1 className=""> #EtMerci! </h1>
           <p className="">
-            {" "}
             Le "Name of the place" prépare votre commande.
             <br />Vous recevrez une notification quand celle-ci sera prête.
           </p>
@@ -23,7 +21,7 @@ class LogOut extends React.Component {
           className="s-mt-20"
           src={logoMain}
           alt="logo main"
-          style={{ height: "25vh" }}
+          style={{ height: '25vh' }}
         />
         <Button
           position="s-mt-5"
@@ -35,7 +33,7 @@ class LogOut extends React.Component {
         />
         <img
           className="s-landscape-hidden s-mt-5"
-          style={{ transform: "rotate(-11deg)" }}
+          style={{ transform: 'rotate(-11deg)' }}
           src={logoTitle}
           alt="logo title"
         />

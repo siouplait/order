@@ -1,0 +1,22 @@
+.s-block-itemspots {
+  display: flex;
+  justify-content: center;
+  height: 18vh;
+  width: 80vw;
+  background-position: center;
+  background-size: cover;
+  margin: 2vh;
+}
+
+.s-block-itemspots div {
+  flex: 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.s-itemspots-div2 {
+  height: 9vw;
+  margin-left: 30vh;
+  bottom: 10;
+}

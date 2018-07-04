@@ -1,4 +1,5 @@
 import React from 'react'
+import { actions } from '../reduce/reducer'
 import Button from '../components-modules/Button'
 
 import btnBurger from '../icon/btn_burger.svg'
@@ -11,7 +12,7 @@ const Nav = ({ actionBurger, actionBack, children, ...rest }) =>
     {children}
     <Button className="s-nav-btn-back" action={actionBack} icon={btnBack} iconHeight="3.2em" />
     <h1>Siouplaît!</h1>
-    <Button className="s-nav-btn-burger" action={actionBurger} icon={btnBurger} iconHeight="2.7em" />
+    <Button className="s-nav-btn-burger" action={() => actions.switchMenu()} icon={btnBurger} iconHeight="2.7em" />
   </div>
 
 export default Nav

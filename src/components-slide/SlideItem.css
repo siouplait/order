@@ -11,6 +11,9 @@ div.s-block-slide-item {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  white-space: nowrap;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 div.s-im-block {

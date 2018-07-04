@@ -2,15 +2,18 @@ div.s-block-slide-menu {
   left: 0;
   color: white;
   position: fixed;
-  z-index: 100;
+  z-index: 20;
   height: 100%;
   background-color: #04346D;
   text-align: center;
   border: 1px solid silver;
   width: 80%;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 ul.s-link-menu {
