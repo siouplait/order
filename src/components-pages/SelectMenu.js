@@ -1,5 +1,6 @@
 import React from 'react'
-import { actions } from '../reduce/reducer'
+import {actions} from '../reduce/reducer'
+import {Link} from '@reach/router'
 
 import PageTemplate from '../components-modules/PageTemplate'
 import Input from '../components-modules/Input'
@@ -10,21 +11,21 @@ import Shoppingcart from '../components-modules/Shoppingcart'
 import btnSearch from '../icon/btn_search.svg'
 
 class SelectMenu extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     actions.getInfoPlace(this.props.id)
   }
 
-  render () {
+  render() {
     return (
       <PageTemplate nav className="s-bg-white">
         <div full="true" className="s-d-flex1">
           <Headertext
             title={this.props.place.title}
             subtitle={this.props.place.address &&
-              this.props.place.address.street_number + ' ' +
-              this.props.place.address.street_name + ' ' +
-              this.props.place.address.country
+            this.props.place.address.street_number + ' ' +
+            this.props.place.address.street_name + ' ' +
+            this.props.place.address.country
             }
           />
           <Input
@@ -52,7 +53,9 @@ class SelectMenu extends React.Component {
             )
           })}
         </div>
-        <Shoppingcart nbrOrder={this.props.order.length}/>
+        <Link to='/commande-page'>
+          <Shoppingcart nbrOrder={this.props.order.length} to="/commande-page"/>
+        </Link>
       </PageTemplate>
     )
   }
