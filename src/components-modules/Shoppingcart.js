@@ -2,9 +2,10 @@ import React from 'react'
 import './Shoppingcart.css'
 import Bell from '../icon/bell_order.png'
 
-const Shoppingcart = ({ children, ...rest }) =>
-    <div className="s-block-cart">
-        <img style={{ height: "3em" }} src={Bell} alt="BellIcon"/>
-    </div>
+const Shoppingcart = ({ nbrOrder }) =>
+  <div className="s-block-cart" style={{ display: nbrOrder > 0 ? 'flex' : 'none' }}>
+    <img style={{ height: '3em' }} src={Bell} alt="BellIcon"/>
+    <p>{nbrOrder}</p>
+  </div>
 
 export default Shoppingcart

@@ -3,19 +3,19 @@ div.s-thumbnail {
     width: 27vw;
     padding: 0;
     margin: 10px 5px;
+    box-shadow: 1px 5px 10px 0 silver;
+    border-radius: 5px;
 }
 
 img.s-img-thumbnail {
     height: 14vh;
     width: 100%;
-    border: 1px solid #ddd;
     margin: 0;
 }
 
-p.s-detail-thumbnail{
+p.s-detail-thumbnail {
     height: 10vh;
     width: 100%;
     text-align: center;
-    border: 1px solid #ddd;
-    margin: 0;
+    margin: 0.5vh 0;
 }

@@ -5,6 +5,7 @@ import PageTemplate from '../components-modules/PageTemplate'
 import Input from '../components-modules/Input'
 import Itemblock from '../components-modules/Itemblock'
 import Headertext from '../components-modules/Headertext'
+import Shoppingcart from '../components-modules/Shoppingcart'
 
 import btnSearch from '../icon/btn_search.svg'
 
@@ -15,6 +16,7 @@ class SelectMenu extends React.Component {
   }
 
   render () {
+    console.log(this.props.order.length)
     return (
       <PageTemplate nav className="s-bg-white">
         <div full="true" className="s-d-flex1">
@@ -33,7 +35,7 @@ class SelectMenu extends React.Component {
             placeholder="Search"
           />
         </div>
-        <div full="true" className="s-d-flex">
+        <div full="true" className="s-d-flex s-pb-20">
           {this.props.place.card && this.props.place.card.products.filter(e => {
             return (
               this.props.category !== 'undefined' ? e._card_category_id === this.props.category : true
@@ -51,6 +53,7 @@ class SelectMenu extends React.Component {
             )
           })}
         </div>
+        <Shoppingcart nbrOrder={this.props.order.length}/>
       </PageTemplate>
     )
   }

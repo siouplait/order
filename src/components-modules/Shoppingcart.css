@@ -1,6 +1,6 @@
-
 div.s-block-cart {
   display: flex;
+  z-index: 999;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -14,4 +14,11 @@ div.s-block-cart {
 
 div.s-block-cart img {
   margin: 0.5em 0 0 0.5em;
+}
+
+div.s-block-cart p {
+  position: absolute;
+  font-size: 5vh;
+  font-weight: 600;
+  margin: 1vh 0 0 1vw;
 }
