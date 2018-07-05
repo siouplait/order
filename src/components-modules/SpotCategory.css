@@ -11,16 +11,18 @@ div.thumbnailcategory {
     margin-top: 1em;
 }
 
- /* A VOIR  !!!!!!!!!!!!!!!!!!!! */ 
 .thumbnailcategory a {
     display: flex;
+    width: 80vw;
+    margin: 0 10px;
     justify-content: center;
     text-decoration: none;
+    box-shadow: 0px 3px 7px 0px silver;
 }
 
 img.img-thumbnail {
     height: 20vh;
-    width: 85%;
+    width: 100%;
     border: 1px solid #ddd;
     padding: 2px;
     margin: 0;
@@ -32,16 +34,22 @@ div.detail-thumbnail{
     margin: 0;
     padding: 0 0 5px 0;
     text-align: center;
-    width: 85%;
+    width: 94%;
     line-height: 2.7em;
-    border-bottom: 1px solid silver;
     background-color: white;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (orientation: landscape) {
-    div.thumbnailcategory {
-        width: 40%;
+    .thumbnailcategory a {
+        width: 40vw;
+    }
+    img.img-thumbnail {
+        height: 30vh;
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 2px;
+        margin: 0;
     }
     div.s-block-spotcategory {
         margin-top: 5px;

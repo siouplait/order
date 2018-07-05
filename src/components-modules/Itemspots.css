@@ -6,6 +6,8 @@
   background-position: center;
   background-size: cover;
   margin: 2vh;
+  box-shadow: 0px 3px 7px 0px black;
+  border-radius: 2px;
 }
 
 .s-block-itemspots div {
@@ -19,4 +21,11 @@
   height: 9vw;
   margin-left: 30vh;
   bottom: 10;
+}
+
+@media screen and (orientation: landscape) {
+  .s-block-itemspots {
+    height: 28vh;
+    width: 40vw;
+  }
 }

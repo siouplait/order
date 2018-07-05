@@ -47,7 +47,7 @@ const SlideItem = ({ order, product, itemOpen }) =>
 
       <div className="s-item-count s-mt-7">
         <Button action={() => actions.updateOrder(product, -1)} icon={btnRemove} iconHeight="3em" />
-        <p>N°{getQty(product, order)}</p>
+        <p>x {getQty(product, order)}</p>
         <Button action={() => actions.updateOrder(product, 1)} icon={btnAdding} iconHeight="3em" />
       </div>
     </div>

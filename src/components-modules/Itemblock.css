@@ -1,13 +1,14 @@
 div.s-thumbnail {
     margin: 0.2em 0.1em;
-    width: 27vw;
+    width: 30vw;
     padding: 0;
     margin: 10px 5px;
     box-shadow: 1px 5px 10px 0 silver;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 img.s-img-thumbnail {
+    border-radius: 2px 2px 0 0;
     height: 14vh;
     width: 100%;
     margin: 0;
@@ -18,4 +19,16 @@ p.s-detail-thumbnail {
     width: 100%;
     text-align: center;
     margin: 0.5vh 0;
+}
+
+@media screen and (orientation: landscape) {
+    img.s-img-thumbnail {
+        height: 27vh;
+    }
+
+    p.s-detail-thumbnail {
+        height: 10vh;
+        margin: 1vh 0;
+        padding-bottom: 1vh;
+    }
 }

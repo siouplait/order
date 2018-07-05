@@ -32,7 +32,7 @@ class App extends Component {
         <SlideMenu {...this.state} />
         <SlideItem {...this.state} />
         <Router>
-          <Page1 {...this.state} path='/' component={Page1} />
+          <Page1 path='/' component={Page1} />
           <Page2 {...this.state} path='/connection' component={Page2} />
           <Page3 {...this.state} path='/connect-spot' component={Page3} />
           <Page4 {...this.state} path='/connect-nfc' component={Page4} />
