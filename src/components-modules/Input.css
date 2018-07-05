@@ -7,6 +7,7 @@ div.s-main-input-logo {
 
 div.s-block-input-logo {
     display: flex;
+    width: 3vw;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #000;
@@ -19,7 +20,7 @@ div.s-block-input-logo button {
 
 input.s-input {
     height: 1.7em;
-    width: inherit;
+    width: 50vw;
     padding: 0 2.5em 0 1em;
     text-align: center;
     border: none;
