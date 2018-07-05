@@ -52,7 +52,7 @@ class SelectMenu extends React.Component {
             )
           })}
         </div>
-        <Shoppingcart nbrOrder={this.props.order.length} to="/commande-page"/>
+        <Shoppingcart full="true" nbrOrder={this.props.order.length} to="/commande-page"/>
       </PageTemplate>
     )
   }

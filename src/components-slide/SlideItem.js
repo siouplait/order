@@ -55,7 +55,7 @@ const SlideItem = ({ order, product, itemOpen }) =>
       action={actions.switchItem}
       className="s-fixed-bl s-m-3"
       icon={btnBack}
-      iconHeight="3em"
+      iconHeight="2em"
       classIcon="s-icon-symetric"
     />
   </div>

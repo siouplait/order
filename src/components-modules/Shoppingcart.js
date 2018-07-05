@@ -8,7 +8,7 @@ const Shoppingcart = ({ nbrOrder }) =>
   <div className="s-block-cart" style={{ display: nbrOrder > 0 ? 'flex' : 'none' }}>
     <Link to="/commande-page" onClick={actions.closeSlide}>
       <img style={{ height: '3em' }} src={Bell} alt="BellIcon" />
-      <p>{nbrOrder}</p>
+      <h3>{nbrOrder}</h3>
     </Link>
   </div>
 export default Shoppingcart
