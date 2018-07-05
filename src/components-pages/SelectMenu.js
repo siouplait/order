@@ -1,5 +1,5 @@
 import React from 'react'
-import { actions } from '../reduce/reducer'
+import {actions} from '../reduce/reducer'
 
 import PageTemplate from '../components-modules/PageTemplate'
 import Input from '../components-modules/Input'
@@ -22,9 +22,9 @@ class SelectMenu extends React.Component {
           <Headertext
             title={this.props.place.title}
             subtitle={this.props.place.address &&
-              this.props.place.address.street_number + ' ' +
-              this.props.place.address.street_name + ' ' +
-              this.props.place.address.country
+            this.props.place.address.street_number + ' ' +
+            this.props.place.address.street_name + ' ' +
+            this.props.place.address.country
             }
           />
           <Input
@@ -52,7 +52,7 @@ class SelectMenu extends React.Component {
             )
           })}
         </div>
-        <Shoppingcart nbrOrder={this.props.order.length}/>
+        <Shoppingcart nbrOrder={this.props.order.length} to="/commande-page"/>
       </PageTemplate>
     )
   }

@@ -11,5 +11,4 @@ const Shoppingcart = ({ nbrOrder }) =>
       <p>{nbrOrder}</p>
     </Link>
   </div>
-
 export default Shoppingcart
