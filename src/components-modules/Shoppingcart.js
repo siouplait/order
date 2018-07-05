@@ -1,11 +1,15 @@
 import React from 'react'
-import './Shoppingcart.css'
+import { Link } from '@reach/router'
+import { actions } from '../reduce/reducer'
 import Bell from '../icon/bell_order.png'
+import './Shoppingcart.css'
 
 const Shoppingcart = ({ nbrOrder }) =>
   <div className="s-block-cart" style={{ display: nbrOrder > 0 ? 'flex' : 'none' }}>
-    <img style={{ height: '3em' }} src={Bell} alt="BellIcon"/>
-    <p>{nbrOrder}</p>
+    <Link to="/commande-page" onClick={actions.closeSlide}>
+      <img style={{ height: '3em' }} src={Bell} alt="BellIcon" />
+      <p>{nbrOrder}</p>
+    </Link>
   </div>
 
 export default Shoppingcart

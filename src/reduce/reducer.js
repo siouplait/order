@@ -31,6 +31,8 @@ const reducers = (state, action) => {
       return { ...state, itemOpen: false, menuOpen: !state.menuOpen }
     case 'SWITCH_ITEM_SLIDE':
       return { ...state, menuOpen: false, itemOpen: !state.itemOpen, product: action.product }
+    case 'CLOSE_ALL_SLIDER':
+      return { ...state, menuOpen: false, itemOpen: false }
     case 'UPDATE_ORDER':
       const orderedItem = state.order.find(e => e.id === action.order.id)
       if (orderedItem) {
@@ -66,6 +68,7 @@ export const actions = {
   switchMenu: () => store.dispatch({ type: 'SWITCH_MENU_SLIDE' }),
   switchItem: (product) => store.dispatch({ type: 'SWITCH_ITEM_SLIDE', product }),
   updateOrder: (order, num) => store.dispatch({ type: 'UPDATE_ORDER', order, num }),
+  closeSlide: () => store.dispatch({ type: 'CLOSE_ALL_SLIDER' })
 }
 
 export const store = createStore(reducers, initialState)

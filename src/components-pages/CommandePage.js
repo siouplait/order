@@ -13,13 +13,10 @@ class CommandePage extends React.Component {
         <div full="true" className="s-d-flex1">
           <Headertext title="VOTRE COMMANDE" subtitle="JJ.MM.AA  HH:MM" />
         </div>
-        <div center>
-          <ListOrder
-            list={this.props.order}
-          />
-          <TotalOrder
-            list={this.props.order}
-          />
+        <p>hahaha</p>
+        <div center="true">
+          <ListOrder list={this.props.order} />
+          <TotalOrder list={this.props.order} />
           <Tip />
           <div className="s-pb-7">
             <Button text="PAYER" className="s-black" />

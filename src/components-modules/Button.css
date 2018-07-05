@@ -38,6 +38,14 @@ button.s-black {
     filter: invert(100%);
 }
 
+button.s-simple {
+    border: none;
+    background-color: none;
+    padding: 1em;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
 button.s-btn-icon {
     padding: 0;
     background-color: transparent;
