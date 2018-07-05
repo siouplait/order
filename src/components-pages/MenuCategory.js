@@ -2,11 +2,8 @@ import React from 'react'
 import { actions } from '../reduce/reducer'
 // components
 import PageTemplate from '../components-modules/PageTemplate'
-import Input from '../components-modules/Input'
 import Headertext from '../components-modules/Headertext'
 import SpotCategory from '../components-modules/SpotCategory'
-// icon
-import btnSearch from '../icon/btn_search.svg'
 
 class MenuCategory extends React.Component {
   constructor (props) {
@@ -25,13 +22,6 @@ class MenuCategory extends React.Component {
               this.props.place.address.street_name + ' ' +
               this.props.place.address.country
             }
-          />
-          <Input
-            className="s-mt-1"
-            icon={btnSearch}
-            width="17em"
-            iconHeight="1.3em"
-            placeholder="Search"
           />
         </div>
 

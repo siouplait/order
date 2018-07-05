@@ -18,19 +18,20 @@ const getQty = (product, order) => {
   return orderItem.qty
 }
 
-const SlideItem = ({ order, product, itemOpen }) => 
+const SlideItem = ({ place, order, product, itemOpen }) => 
   <div className="s-block-slide-item" style={{ transform: itemOpen ? 'translate(0%)' : 'translate(100%)' }}>
     <div className="s-thumbnail-slide s-mt-1">
       <img
-        src={product.custom_image && product.custom_image}
+        src={product.custom_image && product.custom_image !== null ? product.custom_image
+          : place.logo && place.logo.small}
         style={{width: '9em'}}
         alt="item-im"
       />
       <p>{product.custom_name && product.custom_name}</p>
       <h4 style={{ margin: '0' }}>{product.price && product.price.toFixed(2)} €</h4>
-      <p>
-        Ici la description du produit ...
-      </p>
+      <div className="s-slide-description">
+        <p>{product.description}</p>
+      </div>
     </div>
 
     <div className="s-slide-item-form">
@@ -53,7 +54,7 @@ const SlideItem = ({ order, product, itemOpen }) =>
     </div>
     <Button
       action={actions.switchItem}
-      className="s-fixed-bl s-m-3"
+      className="s-fixed-tl s-m-3"
       icon={btnBack}
       iconHeight="2em"
       classIcon="s-icon-symetric"

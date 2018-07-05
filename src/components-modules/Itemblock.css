@@ -23,7 +23,7 @@ p.s-detail-thumbnail {
 
 @media screen and (orientation: landscape) {
     img.s-img-thumbnail {
-        height: 27vh;
+        height: 40vh;
     }
 
     p.s-detail-thumbnail {

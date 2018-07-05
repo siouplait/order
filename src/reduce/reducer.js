@@ -51,12 +51,12 @@ const reducers = (state, action) => {
 
 export const actions = {
   getPlace: () =>
-    fetch('https://dev.siouplait.com/api/v1/places/')
+    fetch('https://api.siouplait.com/api/v1/places/')
       .then(res => res.json())
       .then(data => store.dispatch({type: 'GET_PLACES', places: data.places})),
 
   getInfoPlace: (id) => {
-    fetch(`https://dev.siouplait.com/api/v1/places/${id}`)
+    fetch(`https://api.siouplait.com/api/v1/places/${id}`)
       .then(res => res.json())
       .then(data => store.dispatch({ type: 'GET_INFO_PLACE', place: data.place }))
       .then(data => store.dispatch({

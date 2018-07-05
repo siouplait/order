@@ -15,12 +15,12 @@ class Page3 extends React.Component {
     return (
       <PageTemplate nav="s-nav-noback s-no-title" center className="s-bg-orange">
         <img
-          className="s-fixed-t s-mt-2"
+          className="s-landscape-hidden"
           src={logoMain}
           alt="logo"
           style={{height: '7em'}}
         />
-        <div className="s-block-landscape s-mb-4">
+        <div className="s-block-landscape s-mb-20">
           <Button
             position="s-mt-3"
             text="Scanner le QR Code"

@@ -18,7 +18,7 @@ class SelectMenu extends React.Component {
   render () {
     return (
       <PageTemplate nav className="s-bg-white">
-        <div full="true" className="s-d-flex1">
+        <div full="true" className="s-d-flex">
           <Headertext
             title={this.props.place.title}
             subtitle={this.props.place.address &&
@@ -33,8 +33,7 @@ class SelectMenu extends React.Component {
             iconHeight="1.3em"
             placeholder="Search"
           />
-        </div>
-        <div full="true" className="s-d-flex s-pb-20">
+
           {this.props.place.card && this.props.place.card.products.filter(e => {
             return (
               this.props.category !== 'undefined' ? e._card_category_id === this.props.category : true
@@ -45,7 +44,7 @@ class SelectMenu extends React.Component {
                 onClick={() => actions.switchItem(e)}
                 id={i}
                 key={`food-${i}`}
-                src={e.custom_image}
+                src={e.custom_image !== null ? e.custom_image : this.props.place.logo.small}
               >
                 {e.custom_name} <br/> {`${e.price.toFixed(2)}€`}
               </Itemblock>

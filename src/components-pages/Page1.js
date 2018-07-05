@@ -12,7 +12,7 @@ class Page1 extends React.Component {
           className="s-mb-15"
           src={logoMain}
           alt="button burger"
-          style={{height: '15em'}}
+          style={{height: '10em'}}
         />
         <Link to='/connection'>
           <Button text="PASSER COMMANDE" position="s-mb-4" className="s-black"/>

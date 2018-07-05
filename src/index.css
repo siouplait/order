@@ -1,16 +1,15 @@
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
 * {font-size: 3vh;}
 
-h1 {
-  font-size: 5vh;
-  font-weight: 500;
+/* @media screen and (orientation: landscape) {
+  * {font-size: 3vw;}
 }
 
-h2 {
-  font-size: 4vh;
-  font-weight: 400;
-}
+@media screen and (orientation: portrait) {
+  * {font-size: 3vh;}
+} */
 
-h5 {
-  font-size: 3vh;
-  font-weight: 300;
-}

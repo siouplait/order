@@ -29,10 +29,27 @@ div.s-im-block {
 
 .s-thumbnail-slide {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   align-items: center;
   flex-direction: column;
   width: 90%;
+}
+
+.s-slide-description {
+  display: block;
+  height: 15vh;
+  width: 65vw;
+  padding: 2px;
+  margin: 0;
+  border: 1px solid silver;
+}
+
+.s-slide-description p {
+  overflow-y: scroll;
+  display: block;
+  height: 15vh;
+  width: 65vw;
+  margin: 0;
 }
 
 .s-slide-item-form {
