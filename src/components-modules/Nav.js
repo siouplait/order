@@ -10,9 +10,9 @@ import './Nav.css'
 const Nav = ({ actionBurger, actionBack, children, ...rest }) =>
   <div {...rest}>
     {children}
-    <Button className="s-nav-btn-back" action={actionBack} icon={btnBack} iconHeight="3.2em" />
+    <Button className="s-nav-btn-back" action={actionBack} icon={btnBack} iconHeight="2.7em" />
     <h1>Siouplaît!</h1>
-    <Button className="s-nav-btn-burger" action={() => actions.switchMenu()} icon={btnBurger} iconHeight="2.7em" />
+    <Button className="s-nav-btn-burger" action={() => actions.switchMenu()} icon={btnBurger} iconHeight="2.2em" />
   </div>
 
 export default Nav

@@ -1,30 +1,60 @@
-input.s-input-tip {
+div.s-block-tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.s-block-tip img {
   position: absolute;
-  line-height: 7.5vh;
-  width: 3.8vh;
-  font-size: 5vh;
-  border: none;
-  text-align: center;
+  z-index: 0;
 }
 
-.s-input-t-1 {
-  margin: 1.3vh 0 0 7.3vh;
+div.s-t-tip {
+  width: 199px;
+  height: 61px;
+  display: flex;
 }
 
-.s-input-t-2 {
-  margin: 1.3vh 0 0 12.4vh;
+label.s-label-tips {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
 }
 
-.s-input-t-3 {
-  margin: 1.3vh 0 0 19.2vh;
-}
-
-.s-input-t-4 {
-  margin: 1.3vh 0 0 24.3vh;
-}
-
-#s-input-btn {
+input.s-input-tip-hide {
   display: none;
 }
 
+input.s-input-tip {
+  letter-spacing: 10px;
+  border: 1px solid transparent !important;
+  padding: 0 2px;
+  text-align: center;
+  width: 20px;
+  height: 45px;
+  font-size: 36px;
+}
+
+input.s-input-tip1 {
+  margin: 6px 0 0 41px;
+}
+
+input.s-input-tip2 {
+  margin: 6px 0 0 3px;
+}
+
+input.s-input-tip3 {
+  margin: 6px 0 0 13px;
+}
+
+input.s-input-tip4 {
+  margin: 6px 0 0 3px;
+}
+
+input.s-input-tip5 {
+  margin: 6px 0 0 6px;
+  user-select: none;
+}
 

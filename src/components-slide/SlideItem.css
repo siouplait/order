@@ -9,9 +9,7 @@ div.s-block-slide-item {
   width: 80%;
   display: flex;
   align-items: center;
-  text-align: center;
   flex-direction: column;
-  white-space: nowrap;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -36,19 +34,18 @@ div.s-im-block {
 }
 
 .s-slide-description {
-  display: block;
   height: 15vh;
   width: 65vw;
-  padding: 2px;
+  padding: 4px;
   margin: 0;
+  border-radius: 2px;
   border: 1px solid silver;
+  overflow-y: scroll;
 }
 
 .s-slide-description p {
-  overflow-y: scroll;
-  display: block;
-  height: 15vh;
-  width: 65vw;
+  height: inherit;
+  width: 100%;
   margin: 0;
 }
 
@@ -69,6 +66,13 @@ div.s-im-block {
   .s-thumbnail-slide {
     border: none;
     margin-left: 10px;
-    width: 40%;
+  }
+  .s-slide-description {
+    height: 20vh;
+    width: 25vw;
+  }
+  .s-slide-description p {
+    height: 25vh;
+    width: 100%;
   }
 }

@@ -15,6 +15,7 @@ import CommandePage from './components-pages/CommandePage'
 import LogOut from './components-pages/LogOut'
 import SlideMenu from './components-slide/SlideMenu'
 import SlideItem from './components-slide/SlideItem'
+import Button from './components-modules/Button'
 
 class App extends Component {
   constructor () {
@@ -42,6 +43,13 @@ class App extends Component {
           <CommandePage {...this.state} path='/commande-page' component={CommandePage} />
           <LogOut {...this.state} path='/logout' component={LogOut} />
         </Router>
+        <Button
+          style={{ display: this.state.menuOpen || this.state.itemOpen ? 'block' : 'none' }}
+          action={actions.closeSlide}
+          className="s-close-opac s-fixed-t"
+          iconHeight="2em"
+          text="\"
+        />
       </React.Fragment>
     )
   }

@@ -1,13 +1,10 @@
 import React from 'react'
+import { actions } from '../reduce/reducer'
 
 import Button from '../components-modules/Button'
-// import LinkTemplate from '../components-modules/LinkTemplate'
-// import Itemblock from '../components-modules/Itemblock'
-import { actions } from '../reduce/reducer'
 
 import btnAdding from '../icon/btn_adding.svg'
 import btnRemove from '../icon/btn_remove.svg'
-import btnBack from '../icon/btn_back.svg'
 
 import './SlideItem.css'
 
@@ -33,7 +30,6 @@ const SlideItem = ({ place, order, product, itemOpen }) =>
         <p>{product.description}</p>
       </div>
     </div>
-
     <div className="s-slide-item-form">
       <div className="s-com-item s-mt-6">
         <h4 style={{ margin: '0' }}>Commentaire :</h4>
@@ -46,19 +42,12 @@ const SlideItem = ({ place, order, product, itemOpen }) =>
         />
       </div>
 
-      <div className="s-item-count s-mt-7">
+      <div className="s-item-count s-mt-7 s-mr-5">
         <Button action={() => actions.updateOrder(product, -1)} icon={btnRemove} iconHeight="3em" />
         <p>x {getQty(product, order)}</p>
         <Button action={() => actions.updateOrder(product, 1)} icon={btnAdding} iconHeight="3em" />
       </div>
     </div>
-    <Button
-      action={actions.switchItem}
-      className="s-fixed-tl s-m-3"
-      icon={btnBack}
-      iconHeight="2em"
-      classIcon="s-icon-symetric"
-    />
   </div>
 
 export default SlideItem

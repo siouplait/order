@@ -15,16 +15,21 @@ class SelectMenu extends React.Component {
     actions.getInfoPlace(this.props.id)
   }
 
+  convert (e) {
+    return e.split(' ')[0]
+      .replace(':', 'h')
+      .split(':')[0]
+  }
+
   render () {
     return (
       <PageTemplate nav className="s-bg-white">
         <div full="true" className="s-d-flex">
           <Headertext
             title={this.props.place.title}
-            subtitle={this.props.place.address &&
-            this.props.place.address.street_number + ' ' +
-            this.props.place.address.street_name + ' ' +
-            this.props.place.address.country
+            subtitle={this.props.place.hours &&
+              this.convert(this.props.place.hours.friday_open) + ' à ' +
+              this.convert(this.props.place.hours.friday_close)
             }
           />
           <Input

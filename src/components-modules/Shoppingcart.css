@@ -5,11 +5,11 @@ div.s-block-cart {
   justify-content: center;
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   background-color: orange;
-  width: 6em;
-  height: 6em;
-  border-radius: 6em 0 0 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 0 6em 0 0;
 }
 
 div.s-block-cart a {
@@ -17,11 +17,11 @@ div.s-block-cart a {
 }
 
 div.s-block-cart img {
-  margin: 0.5em 0 0 0.5em;
+  margin: 0.5em 1em 0 0;
 }
 
 div.s-block-cart h3 {
   position: absolute;
   font-weight: 600;
-  margin: 24px 0 0 32px;
+  margin: 24px 0 0 26px;
 }

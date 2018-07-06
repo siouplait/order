@@ -7,11 +7,14 @@ const initialState = {
   order: [],
   menuOpen: false,
   itemOpen: false,
-  product: {}
+  product: {},
+  tip: 0
 }
 
 const reducers = (state, action) => {
   switch (action.type) {
+    case 'UP_TIP':
+      return { ...state, tip: action.tip }
     case 'GET_PLACES':
       return { ...state, places: action.places }
     case 'GET_INFO_PLACE':
@@ -43,6 +46,7 @@ const reducers = (state, action) => {
             : e).filter(e => e.qty !== 0)
         }
       }
+      if (action.num < 0) return state
       return { ...state, order: [...state.order, { ...action.order, qty: action.num < 0 ? 0 : action.num }] }
     default:
       return state
@@ -68,7 +72,8 @@ export const actions = {
   switchMenu: () => store.dispatch({ type: 'SWITCH_MENU_SLIDE' }),
   switchItem: (product) => store.dispatch({ type: 'SWITCH_ITEM_SLIDE', product }),
   updateOrder: (order, num) => store.dispatch({ type: 'UPDATE_ORDER', order, num }),
-  closeSlide: () => store.dispatch({ type: 'CLOSE_ALL_SLIDER' })
+  closeSlide: () => store.dispatch({ type: 'CLOSE_ALL_SLIDER' }),
+  upTip: (tip) => store.dispatch({ type: 'UP_TIP', tip: tip.target.value })
 }
 
 export const store = createStore(reducers, initialState)

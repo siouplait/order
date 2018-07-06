@@ -26,6 +26,15 @@ button.s-btn {
     border-radius: 5px;
 }
 
+button.s-close-opac {
+    opacity: 0.5;
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+}
+
 button.s-facebook {
     border: 1px solid #014A94;
     background-color: #014A94;

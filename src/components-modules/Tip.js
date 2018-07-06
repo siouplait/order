@@ -2,19 +2,30 @@ import React from 'react'
 import imgTip from '../icon/pourboire.png'
 import './Tip.css'
 
-const Tip = () =>
-  <div className="s-block-tip s-mt-5">
-    <div>
-      <input className="s-input-tip s-input-t-1" type="text" value="0" disabled/>
-      <input className="s-input-tip s-input-t-2" type="text" value="0" disabled/>
-      <input className="s-input-tip s-input-t-3" type="text" value="0" disabled/>
-      <input className="s-input-tip s-input-t-4" type="text" value="0" disabled/>
-      <img src={imgTip} alt="tip img" style={{ width: '35vh' }} />
+const addNumber = (evt) => {
+  const num = evt.target.value
+  Array.from(document.getElementsByClassName('s-input-tip-select')).forEach((e, i) => {
+    e.value = num[i] ? num[i] : 0
+  })
+}
+
+const Tip = ({tip}) =>
+  <div className="s-block-tip s-mt-3">
+    <div className="s-t-tip">
+
+      {/* <input type="number" id="s-input-tip" style={{ display: 'block' }} onChange={actions.upTip} /> */}
+      <label className="s-label-tips" htmlFor="s-input-tip"></label>
+
+      <img src={imgTip} alt="tip img" style={{ width: '200px' }} />
+      <input className="s-input-tip1 s-input-tip s-input-tip-select" type="number" placeholder={0}/>
+      <input className="s-input-tip2 s-input-tip s-input-tip-select" type="number" placeholder={0}/>
+      <input className="s-input-tip3 s-input-tip s-input-tip-select" type="number" placeholder={0}/>
+      <input className="s-input-tip4 s-input-tip s-input-tip-select" type="number" placeholder={0}/>
+      <input className="s-input-tip5 s-input-tip" id="s-input-tip" type="number" placeholder={0} onInput={addNumber}/>
     </div>
-    <label htmlFor="s-input-btn">click</label>
-    <input id="s-input-btn" type="number"/>
+
     <h2 className="s-m-0 s-mt-2">Un pourboire Siouplaît ?</h2>
-    <p className="s-mt-0">C'est pas obligatoire, mais ça fait toujours plaisir</p>
+    <p className="s-mt-0 s-mx-2">C'est pas obligatoire, mais ça fait toujours plaisir</p>
   </div>
 
 export default Tip

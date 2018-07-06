@@ -17,7 +17,7 @@ class CommandePage extends React.Component {
         <div center="true">
           <ListOrder list={this.props.order} />
           <TotalOrder list={this.props.order} />
-          <Tip />
+          <Tip tip={this.props.tip} />
           <div className="s-pb-7">
             <Button text="PAYER" className="s-black" />
           </div>

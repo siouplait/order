@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {actions} from '../reduce/reducer'
 import Button from '../components-modules/Button'
 import LinkTemplate from '../components-modules/LinkTemplate'
 
@@ -16,7 +16,7 @@ const SlideMenu = ({ menuOpen }) =>
       <p>Say my name</p>
     </div>
 
-    <LinkTemplate to="/spots-search" text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color: 'black'}}/>
+    <LinkTemplate to="/spots-search" onClick={actions.closeSlide} text="MES SPOTS" logo={logoHeart} imgHeight="1.3em" style={{filter: 'invert(100%)', color: 'black'}}/>
 
     <div>
       <ul className="s-link-menu">

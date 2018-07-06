@@ -17,11 +17,12 @@ class MenuCategory extends React.Component {
         <div full="true" className="s-d-flex1">
           <Headertext
             title={this.props.place.title}
-            subtitle={this.props.place.address &&
-              this.props.place.address.street_number + ' ' +
-              this.props.place.address.street_name + ' ' +
-              this.props.place.address.country
-            }
+            // subtitle={this.props.place.address &&
+            //   this.props.place.address.street_number + ' ' +
+            //   this.props.place.address.street_name + ' ' +
+            //   this.props.place.address.country
+            // }
+            subtitle="FoodTruck"
           />
         </div>
 
